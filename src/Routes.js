@@ -8,11 +8,9 @@ import Footer from "./components/Footer/Footer";
 
 
 const Gallery = React.lazy(() => import("./pages/Gallery/Gallery"))
-const CulturalDetail = React.lazy(() => import("./pages/CulturalDetail/CulturalDetail"))
 const TechnicalDetail = React.lazy(() => import("./pages/TechnicalDetail/TechnicalDetail"))
 const HackathonDetail = React.lazy(() => import("./pages/HackathonDetail/HackathonDetail"))
 const TalkDetail = React.lazy(() => import("./pages/TalkDetail/TalkDetail"))
-const Cultural = React.lazy(() => import("./pages/Cultural/Cultural"))
 const Technical = React.lazy(() => import("./pages/Technical/Technical"))
 const Hackathon = React.lazy(() => import("./pages/Hackathon/Hackathon"))
 const Games = React.lazy(() => import("./pages/Games/Games"))
@@ -50,7 +48,6 @@ const MyRoutes = () => {
             <Route path="/home" element={<App />} />
             <Route path="/" element={<Navigate to="home" />} />
             <Route exact path="/events/*" element={<EventPage />}>
-              <Route exact path="cultural" element={<Cultural />} />
               <Route exact path="AD" element={<AD />} />
               <Route exact path="BSH" element={<BSH />} />
               <Route exact path="CE" element={<CE />} />
@@ -65,9 +62,8 @@ const MyRoutes = () => {
               <Route exact path="games" element={<Games />} />
               <Route path="talk" element={<Talk />} />
             </Route>
-            <Route path="/events" element={<Navigate to="cultural" />} />
+            <Route path="/events" element={<Navigate to="CSE" />} />
             <Route path="/gallery" element={<Gallery />} />
-            <Route path="/events/cultural/:id" element={<CulturalDetail />} />
             <Route path="/events/technical/:id" element={<TechnicalDetail />} />
             <Route path="/events/hackathon/:id" element={<HackathonDetail />} />
             <Route path="/events/games/:id" element={<GamesDetail />} />

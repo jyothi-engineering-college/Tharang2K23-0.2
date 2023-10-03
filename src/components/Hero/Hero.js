@@ -1,47 +1,46 @@
-// import { useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import classes from "./Hero.module.css";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
-  // const [countDays, setDays] = useState(false);
-  // const [countHours, setHours] = useState(false);
-  // const [countMinutes, setMinutes] = useState(false);
-  // const [countSeconds, setSeconds] = useState(false);
+  const [countDays, setDays] = useState(false);
+  const [countHours, setHours] = useState(false);
+  const [countMinutes, setMinutes] = useState(false);
+  const [countSeconds, setSeconds] = useState(false);
 
-  // let interval = useRef();
+   let interval = useRef();
 
-  // const startTimer = () => {
-  //   const countdownDate = new Date("May 21 2022 18:00:00").getTime();
+   const startTimer = () => {
+     const countdownDate = new Date("Nov 10 2023 18:00:00").getTime();
 
-  //   interval = setInterval(() => {
-  //     const now = new Date().getTime();
-  //     const distance = countdownDate - now;
+     interval = setInterval(() => {
+       const now = new Date().getTime();
+       const distance = countdownDate - now;
 
-  //     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  //     const hours = Math.floor(
-  //       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-  //     );
-  //     const minutes = Math.floor((distance / 1000 / 60) % 60);
-  //     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+       const hours = Math.floor(
+         (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+       );
+       const minutes = Math.floor((distance / 1000 / 60) % 60);
+       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  //     if (distance < 0) {
-  //       //
-  //       clearInterval(interval);
-  //     } else {
-  //       setDays(days);
-  //       setHours(hours);
-  //       setMinutes(minutes);
-  //       setSeconds(seconds);
-  //     }
-  //   }, 1000);
-  // };
+       if (distance < 0) {
+         clearInterval(interval);
+     } else {
+     setDays(days);
+     setHours(hours);
+      setMinutes(minutes);
+      setSeconds(seconds);
+    }
+  }, 1000);
+  };
 
-  // useEffect(() => {
-  //   startTimer();
-  //   return () => {
-  //     clearInterval(interval);
-  //   };
-  // });
+  useEffect(() => {
+     startTimer();
+  return () => {
+  clearInterval(interval);
+   };
+   });
 
   return (
     <section id="home" className={classes.hero}>
@@ -50,12 +49,15 @@ const Hero = () => {
           <h1 className={classes.heading}>Tharang 2023</h1>
           <h4 className={classes.caption}>Where creativity meets innovation.</h4>
           <p className={classes.date}>MARCH 31-APRIL 01, 2023</p>
-          {/* <Link className={classes.anchorBtn} target="_blank" rel="noopener noreferrer" to="/tickets">
+          <br/>
+          {<Link className={classes.anchorBtn} target="_blank" rel="noopener noreferrer" to="/tickets">
             <button className={classes.btn}>Tickets on sale now !</button>
-          </Link> */}
-        </div>
+          </Link> }
 
-        {/* <div className={classes.countdownbox}>
+        </div>
+        <br/>
+
+        {<div className={classes.countdownbox}>
           <div className={classes.countdown}>
             <p>{countDays}</p>
             <p>
@@ -82,7 +84,7 @@ const Hero = () => {
             <p>{countSeconds}</p>
             <p>sec</p>
           </div>
-        </div> */}
+        </div> }
       </div>
     </section>
   );

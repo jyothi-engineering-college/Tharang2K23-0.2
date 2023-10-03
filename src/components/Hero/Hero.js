@@ -48,7 +48,7 @@ const Hero = () => {
         <div className={classes.headerbox}>
           <h1 className={classes.heading}>Tharang 2023</h1>
           <h4 className={classes.caption}>Where creativity meets innovation.</h4>
-          <p className={classes.date}>MARCH 31-APRIL 01, 2023</p>
+          <p className={classes.date}>Nov 10 & 11, 2023</p>
           <br/>
           {<Link className={classes.anchorBtn} target="_blank" rel="noopener noreferrer" to="/tickets">
             <button className={classes.btn}>Tickets on sale now !</button>

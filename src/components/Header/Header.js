@@ -103,7 +103,7 @@ const Header = () => {
                 style={{ color: "white", textDecoration: "none" }}
               >
                 <HashLink className={classes.homeLink} to="/home#ambassador">
-                  Sponsers
+                  Sponsors
                 </HashLink>
               </Drop>
             </li>

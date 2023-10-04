@@ -1,6 +1,6 @@
 import classes from "./MR.module.css";
 import MrLists from "../MrDetail/MrLists";
-import EventCard from "../../components/EventCard/EventCard";
+import EventCard from "../../components/EventCardBSH/EventCard";
 import { useEffect } from "react";
 
 const MR = () => {

@@ -1,6 +1,6 @@
 import classes from "./BSH.module.css";
 import BshLists from "../BshDetail/BshLists";
-import EventCard from "../../components/EventCard/EventCard";
+import EventCard from "../../components/EventCardAD/EventCard";
 import { useEffect } from "react";
 
 const BSH = () => {

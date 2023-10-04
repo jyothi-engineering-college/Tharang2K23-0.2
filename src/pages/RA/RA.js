@@ -1,6 +1,6 @@
 import classes from "./RA.module.css";
 import RaLists from "../RaDetail/RaLists";
-import EventCard from "../../components/EventCard/EventCard";
+import EventCard from "../../components/EventCardBSH/EventCard";
 import { useEffect } from "react";
 
 const RA = () => {

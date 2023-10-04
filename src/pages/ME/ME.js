@@ -1,6 +1,6 @@
 import classes from "./ME.module.css";
 import MeLists from "../MeDetail/MeLists";
-import EventCard from "../../components/EventCard/EventCard";
+import EventCard from "../../components/EventCardBSH/EventCard";
 import { useEffect } from "react";
 
 const ME = () => {

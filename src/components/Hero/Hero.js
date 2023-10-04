@@ -50,8 +50,8 @@ const Hero = () => {
           <h4 className={classes.caption}>Where creativity meets innovation.</h4>
           <p className={classes.date}>Nov 10 & 11, 2023</p>
           <br/>
-          {<Link className={classes.anchorBtn} target="_blank" rel="noopener noreferrer" to="/tickets">
-            <button className={classes.btn}>Tickets on sale now !</button>
+          {<Link className={classes.anchorBtn} rel="noopener noreferrer" to="/events/CSE">
+            <button className={classes.btn}>Explore our events !</button>
           </Link> }
 
         </div>
@@ -88,6 +88,7 @@ const Hero = () => {
       </div>
     </section>
   );
+
 };
 
 export default Hero;

@@ -15,7 +15,10 @@
     top: 3%;
     left: 50%;
     transform: translate(-50%);
-    background-color: rgba(0, 0, 0, 0.932);
+    background: var(--Glasscolur, linear-gradient(0deg, rgba(0, 0, 0, 0.32) 0%, rgba(0, 0, 0, 0.32) 100%), radial-gradient(2312.28% 117.96% at 73.67% 49.61%, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.00) 100%), radial-gradient(3465.68% 199.39% at 27.42% 57.87%, rgba(101, 101, 101, 0.00) 0%, rgba(255, 255, 255, 0.00) 100%));
+
+/*Developed by ALAN JS*/
+backdrop-filter: blur(8px);
     padding: 2rem;
     color: #fff;
     z-index: 100;

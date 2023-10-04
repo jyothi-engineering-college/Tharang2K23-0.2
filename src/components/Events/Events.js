@@ -23,7 +23,6 @@ const Events = () => {
           <Link
             to="/events/CSE"
             className={classes.btn} 
-            target="_blank"
             rel="noopener noreferrer"
           >
             Explore our events !

@@ -13,8 +13,10 @@ const CSE = () => {
         return (
           <EventCard
             key={list.id}
+            eventtitle={list.heading}
+            eventDescription={list.para}
             imgSrc={list.imgSrc}
-            heading={list.heading}
+            // heading={list.heading}
             redirectLink={list.redirectLink}
           />
         );

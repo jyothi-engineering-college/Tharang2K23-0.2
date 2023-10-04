@@ -1,6 +1,6 @@
 import classes from "./AD.module.css";
 import AdLists from "../AdDetail/AdLists";
-import EventCard from "../../components/EventCard/EventCard";
+import EventCard from "../../components/EventCardAD/EventCard";
 import { useEffect } from "react";
 
 const AD = () => {

@@ -1,6 +1,6 @@
 import classes from "./EEE.module.css";
 import EeeLists from "../EeeDetail/EeeLists";
-import EventCard from "../../components/EventCard/EventCard";
+import EventCard from "../../components/EventCardAD/EventCard";
 import { useEffect } from "react";
 
 const EEE = () => {

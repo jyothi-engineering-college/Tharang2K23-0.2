@@ -11,19 +11,22 @@ import ContactUs from "./components/ContactUs/ContactUs";
 import SilverSponsor from "./components/Ambassadar/SilverSponsor";
 import BronzeSponsor from "./components/Ambassadar/PlatinumSponsor";
 import PlatinumSponsor from "./components/Ambassadar/PlatinumSponsor";
+import Overlay from "./components/Overlay/Overlay";
+
 
 function App() {
+  const [preloader, setPreloader] = useState(false);
+  const [overlay, setOverlay] = useState(true);
 
-  // const [preloader, setPreloader] = useState(false)
+  useEffect(() => {
+    setPreloader(true);
+  }, []);
 
-  // useEffect(() => {
-  //   setPreloader(true)
-  // }, [])
 
   return (
     <Fragment>
-      {/* {preloader && <PreLoader />}
-      {overlay && <Overlay onClick={() => setOverlay(false)} />} */}
+     {preloader && <PreLoader />}
+      
       <Hero />
       <PlatinumSponsor />
 

@@ -4,7 +4,7 @@
 }
 .title
 {
-height: 60px;
+height: 60px !important;
 margin-bottom: 20px;
 }
 .swiper {
@@ -52,7 +52,6 @@ margin-bottom: 20px;
 .recommended img {
   border-radius: 3%;
   height: 300px;
-  width: 700px;
 }
 
 .recommended .swiper-button-next {

@@ -6,20 +6,21 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Ambassadar.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const SilverSponsor = () => {
+    SwiperCore.use([Autoplay]);
+
   return (
     <>
       {" "}
       <center>
-     
         <img
-          className="title"
+          className="title img-fluid"
           src="https://see.fontimg.com/api/renderfont4/A4lL/eyJyIjoiZnMiLCJoIjoxMDYsInciOjE2MjUsImZzIjo2NSwiZmdjIjoiI0RGREZERiIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/U2lsdkVSIFRpRVI/star-jedi-hollow.png"
           alt=""
           srcset=""
         />
-       
       </center>
       <div className="recommended">
         <Swiper
@@ -38,6 +39,7 @@ const SilverSponsor = () => {
           <SwiperSlide>
             <div className="recommendedmovie">
               <img
+                className="img-fluid"
                 src="https://413strong.org/wp-content/uploads/2018/10/Table-Sponsors-Poster-_-Final.png"
                 alt=""
               />

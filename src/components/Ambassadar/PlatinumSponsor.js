@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "./Ambassadar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-  
+
 const PlatinumSponsor = () => {
   SwiperCore.use([Autoplay]);
 
@@ -19,7 +19,7 @@ const PlatinumSponsor = () => {
       <br />
       <center>
         <img
-          className="title img-fluid"
+          className="title plat img-fluid"
           src="https://see.fontimg.com/api/renderfont4/A4lL/eyJyIjoiZnMiLCJoIjoxMDYsInciOjE2MjUsImZzIjo2NSwiZmdjIjoiI0QxRDFEMSIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/UGxhdGludW0gVGlFUg/star-jedi-hollow.png"
           alt=""
           srcset=""

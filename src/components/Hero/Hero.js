@@ -46,45 +46,56 @@ const Hero = () => {
     <section id="home" className={classes.hero}>
       <div className={classes.herobox}>
         <div className={classes.headerbox}>
-          <h1 className={classes.heading}>Tharang 2023</h1>
-          <h4 className={classes.caption}>Where creativity meets innovation.</h4>
+          <center>
+            <h1 className={classes.heading}>Tharang 2023</h1>
+          </center>
+          <h4 className={classes.caption}>
+            Where creativity meets innovation.
+          </h4>
           <p className={classes.date}>Nov 10 & 11, 2023</p>
-          <br/>
-          {<Link className={classes.anchorBtn} rel="noopener noreferrer" to="/events/CSE">
-            <button className={classes.btn}>Explore our events !</button>
-          </Link> }
-
+          <br />
+          {
+            <Link
+              className={classes.anchorBtn}
+              rel="noopener noreferrer"
+              to="/events/CSE"
+            >
+              <button className={classes.btn}>Explore our events !</button>
+            </Link>
+          }
         </div>
-        <br/>
+        <br />
 
-        {<div className={classes.countdownbox}>
-          <div className={classes.countdown}>
-            <p>{countDays}</p>
-            <p>
-              <small>days</small>
-            </p>
+        {
+          <div className={classes.countdownbox}>
+            <div className={classes.countdown}>
+              <p>{countDays}</p>
+              <p>
+                <small>days</small>
+              </p>
+            </div>
+
+            <span className={classes.column}>:</span>
+
+            <div className={classes.countdown}>
+              <p>{countHours}</p>
+              <p>hours</p>
+            </div>
+
+            <span className={classes.column}>:</span>
+
+            <div className={classes.countdown}>
+              <p>{countMinutes}</p>
+              <p>min</p>
+            </div>
+
+            <span className={classes.column}>:</span>
+            <div className={classes.countdown}>
+              <p>{countSeconds}</p>
+              <p>sec</p>
+            </div>
           </div>
-
-          <span className={classes.column}>:</span>
-
-          <div className={classes.countdown}>
-            <p>{countHours}</p>
-            <p>hours</p>
-          </div>
-
-          <span className={classes.column}>:</span>
-
-          <div className={classes.countdown}>
-            <p>{countMinutes}</p>
-            <p>min</p>
-          </div>
-
-          <span className={classes.column}>:</span>
-          <div className={classes.countdown}>
-            <p>{countSeconds}</p>
-            <p>sec</p>
-          </div>
-        </div> }
+        }
       </div>
     </section>
   );

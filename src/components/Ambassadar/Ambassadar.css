@@ -54,28 +54,7 @@ margin-bottom: 20px;
   height: 300px;
 }
 
-.recommended .swiper-button-next {
-  color: #fff !important;
-  background-color: #0000 !important;
-  border-radius: 50% !important;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  top: 37%;
-  right: 0px;
-}
-.recommended .swiper-button-prev {
-  color: #fff !important;
-  background-color: #000 !important;
-  border-radius: 50% !important;
-  padding-right: 18px;
-  padding-left: 18px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  top: 37%;
-  left: 0;
-}
+
 .recommended .swiper-pagination-bullet-active {
   background-color: #fff !important;
 }
@@ -98,27 +77,12 @@ margin-bottom: 20px;
   --swiper-navigation-size: 17px;
 }
 
-.entertainment .swiper-button-next {
-  color: #fff !important;
-  background-color: rgba(153, 153, 153) !important;
-  border-radius: 50% !important;
-  padding-right: 20px;
-  padding-left: 20px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  top: 45%;
-  right: 0px;
-}
-.entertainment .swiper-button-prev {
-  color: #fff !important;
-  background-color: rgba(153, 153, 153) !important;
-  border-radius: 50% !important;
-  padding-right: 18px;
-  padding-left: 18px;
-  padding-top: 18px;
-  padding-bottom: 18px;
-  top: 45%;
-  left: 0;
-}
 
-/* @media */
+
+@media only screen and (max-width: 768px) {
+
+  .plat{
+    height: 50px !important;
+    width: 350px;
+  }
+}

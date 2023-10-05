@@ -14,7 +14,7 @@ const CSE = () => {
           <EventCard
             key={list.id}
             eventtitle={list.heading}
-            eventDescription={list.para}
+            eventDescription={list.desc}
             imgSrc={list.imgSrc}
             // heading={list.heading}
             redirectLink={list.redirectLink}

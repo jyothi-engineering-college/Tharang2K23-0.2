@@ -5,6 +5,7 @@ const AdLists = [
         para: "Are you ready to beat you boredom?and fly high in the world of imagination,then the opportunity is here,𝐊𝐀𝐑𝐌𝐀'𝟐𝟐 brings you '𝐋𝐀𝐏𝐈𝐙' 𝐏𝐞𝐧𝐜𝐢𝐥 𝐃𝐫𝐚𝐰𝐢𝐧𝐠 𝐂𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐨𝐧 ,Let your minds step into world of imagination...let's be engaged for while lost in thoughts... Let your white papers be kissed by pencil..",
         imgSrc: "/assets/CSE/lasertag.jpg",
         heading: "Laser Tag",
+        desc: "Laser tag is an exhilarating team-based recreational activity that simulates combat using infrared-emitting light guns and sensors worn by players. Participants engage in mock battles, strategically navigating through themed arenas or outdoor spaces, aiming to tag opponents with laser beams while avoiding being tagged themselves. With no physical projectiles, laser tag provides a safe and thrilling experience suitable for various age groups. It encourages teamwork, strategy, and quick decision-making in an immersive and futuristic setting. Participants often enjoy the combination of physical activity, technology, and friendly competition that laser tag offers." ,
         rule1: "1. Entries must follow the competition theme.",
         rule2: "2. It is an open event, on the spot registrations are allowed.",
         rule3: "3. Only one entry per person, no group entries allowed.",

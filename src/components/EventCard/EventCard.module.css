@@ -66,61 +66,64 @@
 .cardFront,
 .cardBack {
     position: absolute;
-    width: 100%;
-    height: 100%;
     backface-visibility: hidden;
     justify-content: center;    
 }
 
 .cardFront {
     margin: 0 auto;
-    box-shadow: 0 0px 0px 0px rgba(0,0,0,0.2); /* Added box-shadow to cardFront */
 }
 
 .cardBack {
     transform: rotateY(180deg) translateZ(1px); /* Adjusted transform to hide the backside */
     margin: 0 auto;
-    box-shadow: 0 0px 0px 0px rgba(0, 0, 0, 0.2);
     backface-visibility: visible;
+    width: 100%;
+   
 }
 .cardBack .eventdescr {
     text-align: center; /* Center the text within the eventdescr div */
+    margin-top: 1rem;
+    font: poppins;
+    font-weight: bold;
   }
 
 .backContent{
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 2px solid transparent;
+    border-image: linear-gradient(to bottom right, #09B326, #32B4ED);
+    border-image-slice: 1;
+    margin: relative;
 }
-.registerButton {
-    margin: 15rem;
+
+button {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
     border: none;
-    color: #fff;
-    background-image: linear-gradient(30deg, #0400ff, #4ce3f7);
-    border-radius: 20px;
-    background-size: 100% auto;
-    font-family: inherit;
-    font-size: 17px;
-    padding: 0.6em 1.5em;
-   }
+    background: none;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  button::before {
+    margin-left: auto;
    
-   .registerButton:hover {
-    background-position: right center;
-    background-size: 200% auto;
-    -webkit-animation: pulse 2s infinite;
-    animation: pulse512 1.5s infinite;
-   }
-   
-   @keyframes pulse512 {
-    0% {
-     box-shadow: 0 0 0 0 #05bada66;
-    }
-   
-    70% {
-     box-shadow: 0 0 0 10px rgb(218 103 68 / 0%);
-    }
-   
-    100% {
-     box-shadow: 0 0 0 0 rgb(218 103 68 / 0%);
-    }
-   }
+  }
+  
+  button::after, button::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-image: linear-gradient(to bottom right, #09B326, #32B4ED);
+    display: block;
+    transition: 0.5s;
+  }
+  
+  button:hover::after, button:hover::before {
+    width: 100%;
+  }

@@ -38,12 +38,12 @@ const EventCard = (props) => {
           onClick={() => setIsClicked(false)} // Toggle isClicked when clicking on the back
         >
           <div className={classes.backContent}>
+            <h2 className="header">{props.eventtitle}</h2>
             <div className={classes.eventdescr}>
-              <h2>{props.eventtitle}</h2>
               <p>{props.eventDescription}</p>
             </div>
             <button
-              className={classes.registerButton}
+              // className={classes.registerButton}
               onClick={handleRegisterClick}
             >
               Register

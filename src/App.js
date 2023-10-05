@@ -5,10 +5,13 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Events from "./components/Events/Events";
 // import Gallery from "./components/Gallery/Gallery";
-import Ambassadar from "./components/Ambassadar/Ambassadar";
+import GoldSponsor from "./components/Ambassadar/GoldSponsor";
 // import Alumni from "./components/Alumni/Alumni";
 import ContactUs from "./components/ContactUs/ContactUs";
 import Overlay from "./components/Overlay/Overlay"
+import SilverSponsor from "./components/Ambassadar/SilverSponsor";
+import BronzeSponsor from "./components/Ambassadar/PlatinumSponsor";
+import PlatinumSponsor from "./components/Ambassadar/PlatinumSponsor";
 
 function App() {
 
@@ -24,11 +27,16 @@ function App() {
       {/* {preloader && <PreLoader />}
       {overlay && <Overlay onClick={() => setOverlay(false)} />} */}
       <Hero />
+      <PlatinumSponsor />
+
       <About />
+      <GoldSponsor />
+
       <Events />
       {/* <Gallery /> */}
-      <Ambassadar />
       {/* <Alumni /> */}
+      <SilverSponsor />
+
       <ContactUs />
     </Fragment>
   );

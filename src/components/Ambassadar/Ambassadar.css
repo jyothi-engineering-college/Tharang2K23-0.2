@@ -1,0 +1,125 @@
+
+.center {
+  margin-left: 30px;
+}
+.title
+{
+height: 60px;
+margin-bottom: 20px;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #22222200;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.recommended {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-top:-10px;
+}
+.recommended h1 {
+  font-size: 23px;
+  color: #4e4b48;
+  font-weight: 600;
+}
+.recommended img {
+  border-radius: 3%;
+  height: 300px;
+  width: 700px;
+}
+
+.recommended .swiper-button-next {
+  color: #fff !important;
+  background-color: #0000 !important;
+  border-radius: 50% !important;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 37%;
+  right: 0px;
+}
+.recommended .swiper-button-prev {
+  color: #fff !important;
+  background-color: #000 !important;
+  border-radius: 50% !important;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  top: 37%;
+  left: 0;
+}
+.recommended .swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
+
+.recommendedmovie h6 {
+  margin-top: 10px;
+  width: 0%;
+  color: rgb(34, 34, 34);
+  font-size: 17.5px;
+  font-weight: 500;
+  line-height: 1.13;
+}
+.recommendedmovie span {
+ float: left;
+  color: #686868;
+  font-size: 16px;
+  line-height: 1.33;
+}
+:root .recommended {
+  --swiper-navigation-size: 17px;
+}
+
+.entertainment .swiper-button-next {
+  color: #fff !important;
+  background-color: rgba(153, 153, 153) !important;
+  border-radius: 50% !important;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 45%;
+  right: 0px;
+}
+.entertainment .swiper-button-prev {
+  color: #fff !important;
+  background-color: rgba(153, 153, 153) !important;
+  border-radius: 50% !important;
+  padding-right: 18px;
+  padding-left: 18px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  top: 45%;
+  left: 0;
+}
+
+/* @media */

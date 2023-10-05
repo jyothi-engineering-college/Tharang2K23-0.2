@@ -8,7 +8,6 @@ import Events from "./components/Events/Events";
 import GoldSponsor from "./components/Ambassadar/GoldSponsor";
 // import Alumni from "./components/Alumni/Alumni";
 import ContactUs from "./components/ContactUs/ContactUs";
-import Overlay from "./components/Overlay/Overlay"
 import SilverSponsor from "./components/Ambassadar/SilverSponsor";
 import BronzeSponsor from "./components/Ambassadar/PlatinumSponsor";
 import PlatinumSponsor from "./components/Ambassadar/PlatinumSponsor";
@@ -16,7 +15,6 @@ import PlatinumSponsor from "./components/Ambassadar/PlatinumSponsor";
 function App() {
 
   // const [preloader, setPreloader] = useState(false)
-  const [overlay, setOverlay] = useState(true)
 
   // useEffect(() => {
   //   setPreloader(true)

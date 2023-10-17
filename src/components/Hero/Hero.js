@@ -54,7 +54,7 @@ const Hero = () => {
           </h4>
           <p className={classes.date}>Nov 10 & 11, 2023</p>
           <br />
-          {
+          {/* {
             <Link
               className={classes.anchorBtn}
               rel="noopener noreferrer"
@@ -62,7 +62,7 @@ const Hero = () => {
             >
               <button className={classes.btn}>Explore our events !</button>
             </Link>
-          }
+          } */}
         </div>
         <br />
 

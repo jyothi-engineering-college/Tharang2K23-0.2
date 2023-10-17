@@ -92,7 +92,7 @@ const Header = () => {
                 fade
               />
             </li>
-            <li className={classes.navLink}>
+            {/* <li className={classes.navLink}>
               <Drop
                 activeClass={classes.active}
                 to="ambassador"
@@ -106,7 +106,7 @@ const Header = () => {
                   Sponsors
                 </HashLink>
               </Drop>
-            </li>
+            </li> */}
             <li className={classes.navLink}>
               <Drop
                 activeClass={classes.active}
@@ -204,22 +204,7 @@ const Header = () => {
                 fade
               />
             </li>
-            <li>
-              <Drop
-                onClick={() => setMobile(!mobile)}
-                activeClass={classes.active}
-                to="ambassador"
-                spy="true"
-                smooth={true}
-                offset={-100}
-                duration={600}
-                style={{ color: "white", textDecoration: "none" }}
-              >
-                <HashLink className={classes.homeLink} to="/home#ambassador">
-                  Register
-                </HashLink>
-              </Drop>
-            </li>
+           
             <li>
               <Drop
                 onClick={() => setMobile(!mobile)}

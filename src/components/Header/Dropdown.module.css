@@ -26,7 +26,7 @@
 }
 
 .links:hover {
-    background-image: linear-gradient(to bottom right,#09B326, #32B4ED);
+    background-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
     -webkit-background-clip: text;
     color: transparent;
     transition: all.5s;

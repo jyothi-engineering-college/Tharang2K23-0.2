@@ -10,7 +10,7 @@
   font-size: 50px; /* Increased from 25px to 50px for 200% size */
   font-weight: 700;
   line-height: 1.2;
-  color: #fff;
+  color: #ffffff;
   letter-spacing: 10px; /* Increased for proportion */
   z-index: 1;
   animation: shift 1s ease-in-out infinite alternate;
@@ -28,13 +28,13 @@
 
 .glitch:before {
   animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
-  color: #8b00ff;
+  color: #E0B5FF;
   z-index: -1;
 }
 
 .glitch:after {
   animation: glitch 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
-  color: #00e571;
+  color:  #5A006A;
   z-index: -2;
 }
 

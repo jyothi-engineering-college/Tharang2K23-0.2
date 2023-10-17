@@ -24,23 +24,23 @@
 
 .tabHead {
     cursor: pointer;
-    padding: .8rem 1rem;
+    padding: .3rem 1rem;
     border-bottom: 3px solid transparent;
-    border-image: linear-gradient(to bottom right, #09B326, #32B4ED);
+    border-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#e4b9e4);
     border-image-slice: 1;
     color: #fff; 
 }
 
 .tabHead:hover,
 .active {
-    background-image: linear-gradient(to bottom right, #09B326, #32B4ED);
+    background-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#e4b9e4);
     border-radius: 5px 5px 0 0;
-    padding: .9rem 1rem;
+    padding: .3rem 1rem;
 }
 
 .links {
     text-decoration: none;
-    color: #fff;
+    color: #f4dbf1;
     font-size: 1.7rem;
 }
 

@@ -39,7 +39,7 @@
 
 .btn {
     align-self: flex-start;
-    background-image: linear-gradient(to bottom right, #09B326, #32B4ED);
+    background-image: linear-gradient(to bottom right,#5A006A, #E0B5FF,#FFFFFF);
     padding: 1.5rem 1.7rem;
     border: none;
     border-radius: 11px;
@@ -53,7 +53,7 @@
 
 .btn:hover {
     cursor: pointer;
-    background-image: linear-gradient(to top left, #09B326, #32B4ED);
+    background-image: linear-gradient(to top left,#5A006A, #E0B5FF,#FFFFFF);
     transition: all .3s;
 }
 

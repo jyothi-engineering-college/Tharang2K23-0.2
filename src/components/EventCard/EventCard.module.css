@@ -21,7 +21,7 @@
 .imgBox {
     width: 100%;
     border: 2px solid transparent;
-    border-image: linear-gradient(to bottom right, #09B326, #32B4ED);
+    border-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
     border-image-slice: 1;
 }
 
@@ -48,7 +48,7 @@
 }
 
 .btn {
-    background-image: linear-gradient(to bottom right, #09B326, #32B4ED);
+    background-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
     padding: .5rem 1.7rem;
     border: none;
     border-radius: 5px;
@@ -90,7 +90,7 @@
     flex-direction: column;
     align-items: center;
     border: 2px solid transparent;
-    border-image: linear-gradient(to bottom right, #09B326, #32B4ED);
+    border-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
     border-image-slice: 1;
 }
 
@@ -114,7 +114,7 @@ button::before, button::after {
     position: absolute;
     width: 0%;
     height: 2px;
-    background-image: linear-gradient(to bottom right, #09B326, #32B4ED);
+    background-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
     display: block;
     transition: 0.5s;
 }

@@ -20,7 +20,7 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: url('https://wallpapers.com/images/hd/plain-black-background-02fh7564l8qq4m6d.jpg');
+  background: url('/public/assets/bg2.jpg'); /* Assuming the public directory is at the root level */
   background-size: cover;
   background-attachment: fixed;
   scroll-behavior: smooth;

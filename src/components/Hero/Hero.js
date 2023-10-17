@@ -47,7 +47,10 @@ const Hero = () => {
       <div className={classes.herobox}>
         <div className={classes.headerbox}>
           <center>
-            <h1 className={classes.heading}>Tharang 2023</h1>
+          <h1 className={classes.heading}>
+        <span className={classes.tharang}>THARANG</span>{" "}
+        <span className={classes.heading2023}>2023</span>
+      </h1>
           </center>
           <h4 className={classes.caption}>
             Where creativity meets innovation.

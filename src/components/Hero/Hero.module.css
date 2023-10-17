@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 @font-face {
     font-family: myFirstFont;
-    src: url(Origami.ttf);
+    src: url(Anurati-Regular.otf);
+}
+@font-face {
+    font-family: myFirstFont2;
+    src: url(Blanka-Regular.otf);
 }
 
 .hero {
@@ -27,15 +33,25 @@
 }
 
 .heading {
-    font-family: myFirstFont;
+    font-family: myFirstFont2;
     font-size: 12rem;
     font-weight: bolder;
     display: inline-block;
     margin-top: 90px;
-    background-image: linear-gradient(to bottom,#09B326, #32B4ED);
+    background-image: linear-gradient(to bottom,#000000, #000000);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    letter-spacing: 10px;
 }
+.heading2023{
+    font-family:myFirstFont2;
+    margin-left: 10px;
+}
+
+.tharang, .heading2023 {
+    line-height: 1; /* Set line-height to 1 to ensure the same height */
+    /* Other styles for each part */
+  }
 .logo{
     margin-bottom: 3.5rem;
 }

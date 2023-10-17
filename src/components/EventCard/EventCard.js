@@ -43,7 +43,7 @@ const EventCard = (props) => {
               <p>{props.eventDescription}</p>
             </div>
             <button
-              // className={classes.registerButton}
+              className={classes.registerButton}
               onClick={handleRegisterClick}
             >
               Register

@@ -1,15 +1,23 @@
-
 .card {
     position: relative;
-    margin: 5rem auto 30rem; /* Adjusted margin to create space between cards */
+    margin: 5rem auto 30rem;
     width: 34rem;
     color: #fff;
     padding: 2rem 0.9rem;
     perspective: 1000px;
-    &.clicked .cardInner {
-        transform: rotateY(180deg);
-    }
 }
+
+.card.clicked .cardInner {
+    transform: rotateY(180deg);
+}
+
+.cardInner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
 .imgBox {
     width: 100%;
     border: 2px solid transparent;
@@ -53,21 +61,10 @@
     justify-self: flex-end;
 }
 
-.cardInner {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
-    &.clicked {
-        transform: rotateY(180deg);
-    }
-}
-
-.cardFront,
-.cardBack {
+.cardFront, .cardBack {
     position: absolute;
     backface-visibility: hidden;
-    justify-content: center;    
+    justify-content: center;
 }
 
 .cardFront {
@@ -75,27 +72,26 @@
 }
 
 .cardBack {
-    transform: rotateY(180deg) translateZ(1px); /* Adjusted transform to hide the backside */
+    transform: rotateY(180deg) translateZ(1px);
     margin: 0 auto;
     backface-visibility: visible;
     width: 100%;
-   
 }
-.cardBack .eventdescr {
-    text-align: center; /* Center the text within the eventdescr div */
-    margin-top: 1rem;
-    font: poppins;
-    font-weight: bold;
-  }
 
-.backContent{
+.cardBack .eventdescr {
+    text-align: center;
+    margin-top: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.backContent {
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid transparent;
     border-image: linear-gradient(to bottom right, #09B326, #32B4ED);
     border-image-slice: 1;
-    margin: relative;
 }
 
 button {
@@ -108,22 +104,31 @@ button {
     font-family: 'Poppins', sans-serif;
     margin-top: 1rem;
     margin-bottom: 1rem;
-  }
-  
-  button::before {
-    margin-left: auto;
-   
-  }
-  
-  button::after, button::before {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+button::before, button::after {
     content: '';
+    position: absolute;
     width: 0%;
     height: 2px;
     background-image: linear-gradient(to bottom right, #09B326, #32B4ED);
     display: block;
     transition: 0.5s;
-  }
-  
-  button:hover::after, button:hover::before {
+}
+
+button::before {
+    top: 0;
+    left: 0;
+}
+
+button::after {
+    bottom: 0;
+    right: 0;
+}
+
+button:hover::after, button:hover::before {
     width: 100%;
-  }
+}

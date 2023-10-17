@@ -2,6 +2,7 @@ import classes from "./BSH.module.css";
 import BshLists from "../BshDetail/BshLists";
 import EventCard from "../../components/EventCardAD/EventCard";
 import { useEffect } from "react";
+import StayTuned from "../../components/StayTuned/StayTuned";
 
 const BSH = () => {
   useEffect(() => {
@@ -9,18 +10,22 @@ const BSH = () => {
   }, [])
   return (
     <div className={classes.BSH}>
-      {BshLists.map((list) => {
+      {BshLists.length > 0 ? (
+      BshLists.map((list) => {
         return (
           <EventCard
             key={list.id}
             imgSrc={list.imgSrc}
             heading={list.heading}
             redirectLink={list.redirectLink}
-          />
-        );
-      })}
-    </div>
-  );
-};
+            />
+            );
+          })
+        ) : (
+          <StayTuned />
+        )}
+      </div>
+    );
+  };
 
 export default BSH;

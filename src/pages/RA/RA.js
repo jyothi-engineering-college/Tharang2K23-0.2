@@ -1,7 +1,8 @@
 import classes from "./RA.module.css";
-import RaLists from "../RaDetail/RaLists";
+import Lists from "../RaDetail/RaLists";
 import EventCard from "../../components/EventCardBSH/EventCard";
 import { useEffect } from "react";
+import StayTuned from "../../components/StayTuned/StayTuned";
 
 const RA = () => {
   useEffect(() => {
@@ -9,18 +10,22 @@ const RA = () => {
   }, [])
   return (
     <div className={classes.RA}>
-      {RaLists.map((list) => {
+      {Lists.length > 0 ? (
+      Lists.map((list) => {
         return (
           <EventCard
             key={list.id}
             imgSrc={list.imgSrc}
             heading={list.heading}
             redirectLink={list.redirectLink}
-          />
-        );
-      })}
-    </div>
-  );
-};
+            />
+            );
+          })
+        ) : (
+          <StayTuned />
+        )}
+      </div>
+    );
+  };
 
 export default RA;

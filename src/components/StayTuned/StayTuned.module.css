@@ -2,8 +2,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-     /* Assuming you want to center it vertically in the viewport */
+    width : 100%;
 }
+
 
 .glitch {
   position: relative;

@@ -1,7 +1,8 @@
 import classes from "./EEE.module.css";
-import EeeLists from "../EeeDetail/EeeLists";
+import Lists from "../EeeDetail/EeeLists";
 import EventCard from "../../components/EventCardAD/EventCard";
 import { useEffect } from "react";
+import StayTuned from "../../components/StayTuned/StayTuned";
 
 const EEE = () => {
   useEffect(() => {
@@ -9,18 +10,22 @@ const EEE = () => {
   }, [])
   return (
     <div className={classes.EEE}>
-      {EeeLists.map((list) => {
+      {Lists.length > 0 ? (
+      Lists.map((list) => {
         return (
           <EventCard
             key={list.id}
             imgSrc={list.imgSrc}
             heading={list.heading}
             redirectLink={list.redirectLink}
-          />
-        );
-      })}
-    </div>
-  );
-};
+            />
+            );
+          })
+        ) : (
+          <StayTuned />
+        )}
+      </div>
+    );
+  };
 
 export default EEE;

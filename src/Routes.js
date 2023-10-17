@@ -4,16 +4,8 @@ import App from "./App";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Gallery from "./pages/Gallery/Gallery";
-import TechnicalDetail from "./pages/TechnicalDetail/TechnicalDetail";
-import HackathonDetail from "./pages/HackathonDetail/HackathonDetail";
-import TalkDetail from "./pages/TalkDetail/TalkDetail";
-import Technical from "./pages/Technical/Technical";
-import Hackathon from "./pages/Hackathon/Hackathon";
-import Games from "./pages/Games/Games";
-import Talk from "./pages/Talk/Talk";
-import GamesDetail from "./pages/GamesDetail/GamesDetail";
+
 import EventPage from "./pages/EventPage/EventPage";
-import Tickets from "./pages/Tickets/Tickets";
 import AD from "./pages/AD/AD";
 import AdDetail from "./pages/AdDetail/AdDetail";
 import BSH from "./pages/BSH/BSH";
@@ -51,18 +43,12 @@ const MyRoutes = () => {
             <Route exact path="ME" element={<ME />} />
             <Route exact path="MR" element={<MR />} />
             <Route exact path="RA" element={<RA />} />
-            <Route exact path="technical" element={<Technical />} />
-            <Route exact path="hackathon" element={<Hackathon />} />
-            <Route exact path="games" element={<Games />} />
-            <Route path="talk" element={<Talk />} />
+         
           </Route>
           <Route path="/events" element={<Navigate to="CSE" />} />
           <Route path="/gallery" element={<Gallery />} />
-          <Route path="/events/technical/:id" element={<TechnicalDetail />} />
-          <Route path="/events/hackathon/:id" element={<HackathonDetail />} />
-          <Route path="/events/games/:id" element={<GamesDetail />} />
-          <Route path="/events/talk/:id" element={<TalkDetail />} />
-          <Route path="/tickets" element={<Tickets />} />
+         
+          
           <Route path="/events/AdDetail/:id" element={<AdDetail />} />
           <Route path="/events/BshDetail/:id" element={<BshDetail />} />
           <Route path="/events/CeDetail/:id" element={<CeDetail />} />

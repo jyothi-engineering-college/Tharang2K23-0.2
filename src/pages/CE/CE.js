@@ -1,7 +1,8 @@
 import classes from "./CE.module.css";
-import CeLists from "../CeDetail/CeLists";
+import Lists from "../CeDetail/CeLists";
 import EventCard from "../../components/EventCardAD/EventCard";
 import { useEffect } from "react";
+import StayTuned from "../../components/StayTuned/StayTuned";
 
 const CE = () => {
   useEffect(() => {
@@ -9,18 +10,23 @@ const CE = () => {
   }, [])
   return (
     <div className={classes.CE}>
-      {CeLists.map((list) => {
+      {Lists.length > 0 ? (
+      Lists.map((list) => {
         return (
           <EventCard
             key={list.id}
             imgSrc={list.imgSrc}
             heading={list.heading}
             redirectLink={list.redirectLink}
-          />
-        );
-      })}
-    </div>
-  );
-};
+            />
+            );
+          })
+        ) : (
+          <StayTuned />
+        )}
+      </div>
+    );
+  };
+
 
 export default CE;

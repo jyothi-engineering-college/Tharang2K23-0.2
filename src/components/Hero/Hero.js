@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
 import classes from "./Hero.module.css";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
   const [countDays, setDays] = useState(false);
@@ -57,15 +56,7 @@ const Hero = () => {
           </h4>
           <p className={classes.date}>Nov 10 & 11, 2023</p>
           <br />
-          {/* {
-            <Link
-              className={classes.anchorBtn}
-              rel="noopener noreferrer"
-              to="/events/CSE"
-            >
-              <button className={classes.btn}>Explore our events !</button>
-            </Link>
-          } */}
+          
         </div>
         <br />
 

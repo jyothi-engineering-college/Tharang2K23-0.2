@@ -1,7 +1,8 @@
 import classes from "./ECE.module.css";
-import EceLists from "../EceDetail/EceLists";
+import Lists from "../EceDetail/EceLists";
 import EventCard from "../../components/EventCardAD/EventCard";
 import { useEffect } from "react";
+import StayTuned from "../../components/StayTuned/StayTuned";
 
 const ECE = () => {
   useEffect(() => {
@@ -9,18 +10,23 @@ const ECE = () => {
   }, [])
   return (
     <div className={classes.ECE}>
-      {EceLists.map((list) => {
+      {Lists.length > 0 ? (
+      Lists.map((list) => {
         return (
           <EventCard
             key={list.id}
             imgSrc={list.imgSrc}
             heading={list.heading}
             redirectLink={list.redirectLink}
-          />
-        );
-      })}
-    </div>
-  );
-};
+            />
+            );
+          })
+        ) : (
+          <StayTuned />
+        )}
+      </div>
+    );
+  };
+
 
 export default ECE;

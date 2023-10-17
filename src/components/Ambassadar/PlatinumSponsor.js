@@ -12,23 +12,14 @@ const PlatinumSponsor = () => {
   SwiperCore.use([Autoplay]);
 
   return (
-    <>
-      {" "}
-      <br />
-      <br />
-      <br />
-      <center>
-        <img
-          className="title plat img-fluid"
-          src="https://see.fontimg.com/api/renderfont4/A4lL/eyJyIjoiZnMiLCJoIjoxMDYsInciOjE2MjUsImZzIjo2NSwiZmdjIjoiI0QxRDFEMSIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/UGxhdGludW0gVGlFUg/star-jedi-hollow.png"
-          alt=""
-          srcset=""
-        />
-      </center>
-      <div className="recommended">
+    <div className="sponsorship-container">
+      
+
+      <div className="sponsorship-carousel">
         <Swiper
           autoplay={{
-            delay: 3000,
+            delay: 2500,
+            disableOnInteraction: false,
           }}
           slidesPerView={1}
           slidesPerGroup={1}
@@ -39,28 +30,28 @@ const PlatinumSponsor = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="recommendedmovie">
-              <img className="img-fluid"
+            <div className="sponsorship-slide">
+              <img
+                className="img-fluid"
                 src="https://413strong.org/wp-content/uploads/2018/10/Table-Sponsors-Poster-_-Final.png"
                 alt=""
               />
-              {/* <h6>Kaduva</h6>
-            <span>Action/Drama</span> */}
+              {/* You can add sponsor details or links here */}
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="recommendedmovie">
+            <div className="sponsorship-slide">
               <img
+                className="img-fluid"
                 src="https://413strong.org/wp-content/uploads/2018/10/Table-Sponsors-Poster-_-Final.png"
                 alt=""
               />
-              {/* <h6>Kaduva</h6>
-            <span>Action/Drama</span> */}
+              {/* You can add sponsor details or links here */}
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
-    </>
+    </div>
   );
 };
 

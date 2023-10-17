@@ -9,20 +9,13 @@ import "./Ambassadar.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const SilverSponsor = () => {
-    SwiperCore.use([Autoplay]);
+  SwiperCore.use([Autoplay]);
 
   return (
-    <>
-      {" "}
-      <center>
-        <img
-          className="title img-fluid"
-          src="https://see.fontimg.com/api/renderfont4/A4lL/eyJyIjoiZnMiLCJoIjoxMDYsInciOjE2MjUsImZzIjo2NSwiZmdjIjoiI0RGREZERiIsImJnYyI6IiNGRkZGRkYiLCJ0IjoxfQ/U2lsdkVSIFRpRVI/star-jedi-hollow.png"
-          alt=""
-          srcset=""
-        />
-      </center>
-      <div className="recommended">
+    <div className="sponsorship-container">
+      
+
+      <div className="sponsorship-carousel">
         <Swiper
           autoplay={{
             delay: 2500,
@@ -37,29 +30,28 @@ const SilverSponsor = () => {
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="recommendedmovie">
+            <div className="sponsorship-slide">
               <img
                 className="img-fluid"
                 src="https://413strong.org/wp-content/uploads/2018/10/Table-Sponsors-Poster-_-Final.png"
                 alt=""
               />
-              {/* <h6>Kaduva</h6>
-            <span>Action/Drama</span> */}
+              {/* You can add sponsor details or links here */}
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="recommendedmovie">
+            <div className="sponsorship-slide">
               <img
+                className="img-fluid"
                 src="https://413strong.org/wp-content/uploads/2018/10/Table-Sponsors-Poster-_-Final.png"
                 alt=""
               />
-              {/* <h6>Kaduva</h6>
-            <span>Action/Drama</span> */}
+              {/* You can add sponsor details or links here */}
             </div>
           </SwiperSlide>
         </Swiper>
       </div>
-    </>
+    </div>
   );
 };
 

@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
-@font-face {
-    font-family: myFirstFont;
-    src: url(Anurati-Regular.otf);
-}
+
 @font-face {
     font-family: myFirstFont2;
     src: url(Blanka-Regular.otf);

@@ -21,14 +21,12 @@ function PreLoader() {
   }, []);
 
   return (
-    <div className="preLoader">
+    <div className="preLoader" onClick={handleLogoClick}>
       {loadingCompleted ? (
-        <div>Your score: {clickCount}</div>
+        <div>{clickCount}</div>
       ) : (
         <>
-          <img className="preLoaderLogo" src={Logo} alt="preloader" onClick={handleLogoClick} />
-          <h1 className="preLoaderheading">Loading</h1>
-          {hasClickedOnce && <div className="scoreDisplay">Your score: {clickCount}</div>}
+          {hasClickedOnce && <div className="scoreDisplay">{clickCount}</div>}
         </>
       )}
     </div>

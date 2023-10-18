@@ -5,12 +5,26 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  justify-content: space-between; /* Changed from center to space-between */
+  flex-direction: column; /* Keep this as is */
   animation: trans 1.4s linear 1.3s 1 normal forwards;
   z-index: 999999;
+  background-image: url('./wait.svg');
+  background-size: cover;    
+  background-repeat: no-repeat;    
+  background-position: center;     
+  padding-bottom: 50px; /* Adding some padding to the bottom */
 }
 
+.scoreDisplay {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  color: #fff;
+  position: absolute;  /* Absolute positioning */
+  bottom: 10px;        /* Place it 10 pixels from the bottom */
+  left: 50%;           /* Center it horizontally */
+  transform: translateX(-50%);  /* Adjust for true centering */
+}
 .preLoaderLogo {
   height: 300px;
   animation: logo 5s;
@@ -54,12 +68,4 @@
     margin-top: -100vh;
     opacity: 0;
   }
-}
-
-/* New styles for score display */
-.scoreDisplay {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 3rem;
-  color: #fff;
-  margin-top: 20px;
 }

@@ -18,9 +18,7 @@ const EventCard = (props) => {
       className={`${classes.card} ${isClicked ? classes.clicked : ""}`}
       onClick={handleCardClick}
     >
-      <br />
-      <br /><br />
-      <br />
+      
       <div className={classes.cardInner}>
         {/* Front of the card */}
         <div
@@ -39,16 +37,16 @@ const EventCard = (props) => {
           onClick={() => setIsClicked(false)} // Toggle isClicked when clicking on the back
         >
           <div className={classes.backContent}>
-            <br />
             <h2 className="header">{props.eventtitle}</h2>
             <div className={classes.eventdescr}>
               <p>{props.eventDescription}</p>
-            </div>
-            <p className={classes.fees}>
+              <p className={classes.fees}>
               Registration fees: ₹
               <span className={classes.amount}>{props.regFee}</span>
             </p>
             <p className={classes.cont}>Contact - {props.contact}</p>
+            </div>
+            
             <button
               className={classes.registerButton}
               onClick={handleRegisterClick}

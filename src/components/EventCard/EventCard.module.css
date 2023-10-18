@@ -49,7 +49,8 @@
 .heading {
     font-size: 2.3rem;
     text-align: center;
-    height: 10rem;
+    height: 5rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .btn {
@@ -143,7 +144,6 @@ button:hover::after, button:hover::before {
     
     .card-container {
         display: flex;
-        
         overflow-x: auto;  
         white-space: nowrap;
     }
@@ -154,13 +154,14 @@ button:hover::after, button:hover::before {
         width: calc(100% - 10px); 
         margin-right: 10px; 
     }
+    
 
     .img {
         width: 100%;
-        height: auto;
+        height: 100%;
     }
     
     .heading {
-        font-size: 1.2rem; 
+        font-size: 1.5rem; 
     }
 }

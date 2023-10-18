@@ -12,6 +12,7 @@ const EventCard = (props) => {
     event.stopPropagation(); // Prevent card click when the button is clicked
     window.location.href = props.redirectLink; // Redirect to the specified link
   };
+  const isMobile = window.innerWidth <= 768; 
   
   return (
     <div
@@ -39,7 +40,9 @@ const EventCard = (props) => {
           <div className={classes.backContent}>
             <h2 className="header">{props.eventtitle}</h2>
             <div className={classes.eventdescr}>
+            <div style={isMobile ? {display: 'none'} : {}}>
               <p>{props.eventDescription}</p>
+            </div>
               <p className={classes.fees}>
               Registration fees: ₹
               <span className={classes.amount}>{props.regFee}</span>
@@ -48,7 +51,7 @@ const EventCard = (props) => {
             </div>
             
             <button
-              className={classes.registerButton}
+              className={classes.redirectLink}
               onClick={handleRegisterClick}
             >
               Register

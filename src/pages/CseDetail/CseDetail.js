@@ -57,13 +57,13 @@ const CseDetail = () => {
             return <p className={crit}></p>;
           })} */}
 
-            <p className={classes.fees}>
-              Registration fees: ₹
-              <span className={classes.amount}>{culturalDetail[0].regFee}</span>
-            </p>
+<p className={classes.fees}>
+  Registration fees: ₹
+  <span className={classes.amount}>{culturalDetail[0].regFee}</span>
+</p>
 
-            <p className={classes.cont}>Contact - {culturalDetail[0].contact1}</p>
-            <p className={classes.cont}>Contact - {culturalDetail[0].contact2}</p>
+<p className={classes.cont}>Contact - {culturalDetail[0].contact}</p>
+
 
             {/* <a
               href={culturalDetail[0].paymentLink}

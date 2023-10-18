@@ -5,8 +5,9 @@ import { useEffect } from "react";
 
 const CSE = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={classes.CSE}>
       {CseLists.map((list) => {
@@ -16,7 +17,9 @@ const CSE = () => {
             eventtitle={list.heading}
             eventDescription={list.desc}
             imgSrc={list.imgSrc}
-            // heading={list.heading}
+            heading={list.name}  
+            regFee={list.regFee} 
+            contact={list.contact} 
             redirectLink={list.redirectLink}
           />
         );

@@ -3,7 +3,6 @@ import { Route, Routes, Navigate } from "react-router-dom";
 import App from "./App";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
-import Gallery from "./pages/Gallery/Gallery";
 
 import EventPage from "./pages/EventPage/EventPage";
 import AD from "./pages/AD/AD";
@@ -46,8 +45,6 @@ const MyRoutes = () => {
          
           </Route>
           <Route path="/events" element={<Navigate to="CSE" />} />
-          <Route path="/gallery" element={<Gallery />} />
-         
           
           <Route path="/events/AdDetail/:id" element={<AdDetail />} />
           <Route path="/events/BshDetail/:id" element={<BshDetail />} />

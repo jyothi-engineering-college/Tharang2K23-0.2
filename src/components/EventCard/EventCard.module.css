@@ -3,9 +3,9 @@
 .card {
     position: relative;
     margin: 5rem auto 30rem;
-    width: 40rem;
+    width: 30rem;
     color: #fff;
-    padding: 2rem 0.9rem;
+    padding: 1rem 0.9rem;
     perspective: 1000px;
     border-radius: 10px;
 }
@@ -42,7 +42,7 @@
     align-items: center;
     padding: 1.9rem .3rem;
     gap: 1.5rem;
-    height: 40rem;
+    height: 30rem;
     justify-content: flex-end;
 }
 
@@ -100,7 +100,7 @@
     border: 2px solid transparent;
     border-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
     border-image-slice: 1;
-    height: 38.5rem;
+    height: 28rem;
     
 }
 
@@ -151,23 +151,7 @@ button:hover::after, button:hover::before {
         white-space: nowrap;
     }
 
-    .cardBack {
-        transform: rotateY(180deg) translateZ(1px);
-        margin: 0 auto;
-        backface-visibility: visible;
-        width: 100%;
-        height: 100%;
-    }
-    .backContent {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border: 2px solid transparent;
-        border-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
-        border-image-slice: 1;
-        height: 44rem;
-        
-    }
+    
 
     .card {
        
@@ -183,6 +167,6 @@ button:hover::after, button:hover::before {
     }
     
     .heading {
-        font-size: 1.5rem; 
+        font-size: 4rem; 
     }
 }

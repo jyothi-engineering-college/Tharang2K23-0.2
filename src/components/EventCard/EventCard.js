@@ -38,8 +38,9 @@ const EventCard = (props) => {
           onClick={() => setIsClicked(false)} // Toggle isClicked when clicking on the back
         >
           <div className={classes.backContent}>
-            <h2 className="header">{props.eventtitle}</h2>
+            
             <div className={classes.eventdescr}>
+            {isMobile ? <h1 className={classes.heading}>{props.heading}</h1> : null}
             <div style={isMobile ? {display: 'none'} : {}}>
               <p>{props.eventDescription}</p>
             </div>

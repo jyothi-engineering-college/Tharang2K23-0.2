@@ -12,7 +12,7 @@
 
 .card.clicked .cardInner {
     transform: rotateY(180deg);
-    transition:  transform 3s;
+    transition:  transform 1s;
 }
 
 .cardInner {

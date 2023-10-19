@@ -28,7 +28,7 @@ const MyRoutes = () => {
   return (
     <Fragment>
       <Header />
-      <main>
+      <main style={{minHeight:"90vh"}}>
         <Routes>
           <Route path="/home" element={<App />} />
           <Route path="/" element={<Navigate to="home" />} />

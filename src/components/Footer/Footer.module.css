@@ -1,205 +1,83 @@
 .footer {
-  background: linear-gradient(to bottom right, #150620, #33053e);
+  background: #150620;
   color: #fff;
-  padding: 2rem 3rem;
-  border-top-left-radius: 50px;
-  border-top-right-radius: 50px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  padding: 1.5rem 1rem;
+  font-size: 1rem;
+  text-align: center;  /* Ensures content is always centered */
+  transition: background 0.3s;
   position: relative;
+  
+  z-index: 1000;
+  
 }
 
-.row {
+.footer:hover {
+  background: #33053e;
+}
+
+.logoContainer {
   display: flex;
-  justify-content: space-between;
-}
-
-.col {
-  flex-basis: 25%;
-  padding: 1.3rem;
-  cursor: pointer; /* Add cursor effect to all columns */
+  justify-content: center;
+  margin-bottom: 1rem;
+  
 }
 
 .logo {
-  max-width: 100%;
+  width: 60%;
   transition: transform 0.5s;
-}
-
-.col h3 {
+  display: flex;
+  justify-content: center;
   margin-bottom: 1rem;
-  font-family: "Anurathi", sans-serif;
-  transition: transform 0.5s;
-}
-
-.col h2 {
-  font-size: 1.5rem;
-  transition: color 0.3s; /* Add color transition */
-  cursor: pointer; /* Add cursor effect */
-}
-
-.col h2:hover {
-  color: #5a006a; /* Change color to purple on hover */
-}
-
-.logo:hover,
-.col h3:hover {
-  transform: rotateY(180deg);
-}
-
-.para {
-  color: #ccc;
-  font-weight: 300;
-  font-size: 1.2rem;
-}
-
-.email {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  width: fit-content;
-}
-
-.links {
-  flex-basis: 15%;
-  margin-top: 1rem;
-}
-
-.links ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.links ul li {
-  margin-bottom: 12px;
-  /*  */
-}
-
-.links ul li a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: transform 0.3s;
-}
-
-.links ul li a:hover {
-  color: #ccc;
-  transform: translateX(10px);
-  animation: shake 0.5s infinite;
-  cursor: pointer; /* Add cursor effect */
 }
 
 .socialIcons {
   display: flex;
-  align-items: center;
-  margin-top: 1rem;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  
 }
 
 .icons {
-  font-size: 6rem;
-  margin-right: 3rem;
-  text-align: center;
-  color: #fff;
-  cursor: pointer; /* Add cursor effect */
+  font-size: 2rem;
+  transition: transform 0.3s, color 0.3s;
+  color: #ccc;
+  
 }
 
 .icons:hover {
-  color: #ccc;
+  transform: scale(2.1);
+  color: #ffffff;
+}
+.col{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+.col a {
+  display: block;
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0.5rem 2rem;
+  transition: color 0.3s;
 }
 
-.hr {
-  width: 95%;
-  border: 0;
-  border-bottom: 1px solid #ccc;
-  margin: 2rem auto;
-  animation: slideUpDown 2s alternate infinite;
+.col a:hover {
+  color: #ccc;
+  
+    transform: scale(2.1);
+    color: #ffffff;
+  
 }
 
 .copyright {
-  text-align: center;
-  color: #ccc;
-  animation: slideLeftRight 2s alternate infinite;
-  cursor: pointer; /* Add cursor effect */
-}
-
-@keyframes slideLeftRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(20px);
-  }
-}
-
-@keyframes shake {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(5px);
-  }
-}
-
-.links ul li {
-  margin-bottom: 12px;
-}
-
-.links ul li a {
-  text-decoration: none;
-  color: #fff;
-  display: block;
-  transition: transform 0.3s;
-}
-
-.links ul li a:hover {
-  color: #ccc;
-  transform: translateX(10px);
-  animation: shake 0.5s infinite;
-  cursor: pointer; /* Add cursor effect */
-}
-
-.socialIcons {
-  display: flex;
-  align-items: center;
   margin-top: 1rem;
-}
-
-.icons {
-  font-size: 6rem;
-  margin-right: 3rem;
-  text-align: center;
-  color: #fff;
-}
-
-.icons:hover {
   color: #ccc;
+  font-size: 0.8rem;
+  text-align: center;  /* Ensures copyright is always centered */
 }
 
-.hr {
-  width: 95%;
-  border: 0;
-  border-bottom: 1px solid #ccc;
-  margin: 2rem auto;
-}
-
-.noBullets {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.centerVertically {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}

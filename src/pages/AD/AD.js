@@ -1,6 +1,6 @@
 import classes from "./AD.module.css";
 import AdLists from "../AdDetail/AdLists";
-import EventCard from "../../components/EventCardAD/EventCard";
+import EventCard from "../../components/EventCard/EventCard";
 import { useEffect } from "react";
 import StayTuned from "../../components/StayTuned/StayTuned"; // Import the StayTuned component
 

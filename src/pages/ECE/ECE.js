@@ -1,6 +1,6 @@
 import classes from "./ECE.module.css";
 import Lists from "../EceDetail/EceLists";
-import EventCard from "../../components/EventCardAD/EventCard";
+import EventCard from "../../components/EventCard/EventCard";
 import { useEffect } from "react";
 import StayTuned from "../../components/StayTuned/StayTuned";
 

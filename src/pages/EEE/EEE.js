@@ -1,6 +1,6 @@
 import classes from "./EEE.module.css";
 import Lists from "../EeeDetail/EeeLists";
-import EventCard from "../../components/EventCardAD/EventCard";
+import EventCard from "../../components/EventCard/EventCard";
 import { useEffect } from "react";
 import StayTuned from "../../components/StayTuned/StayTuned";
 

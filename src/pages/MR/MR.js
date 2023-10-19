@@ -1,6 +1,6 @@
 import classes from "./MR.module.css";
 import Lists from "../MrDetail/MrLists";
-import EventCard from "../../components/EventCardBSH/EventCard";
+import EventCard from "../../components/EventCard/EventCard";
 import { useEffect } from "react";
 import StayTuned from "../../components/StayTuned/StayTuned";
 

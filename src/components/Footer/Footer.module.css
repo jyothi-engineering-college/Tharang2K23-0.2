@@ -6,7 +6,6 @@
   text-align: center;  /* Ensures content is always centered */
   transition: background 0.3s;
   position: relative;
-  
   z-index: 1000;
   
 }

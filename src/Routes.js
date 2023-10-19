@@ -23,6 +23,8 @@ import MR from "./pages/MR/MR";
 import MrDetail from "./pages/MrDetail/MrDetail";
 import RA from "./pages/RA/RA";
 import RaDetail from "./pages/RaDetail/RaDetail";
+import Tech from "./pages/Technical/Technical";
+import TechDetail from "./pages/TechnicalDetail/TechnicalDetail";
 
 const MyRoutes = () => {
   return (
@@ -42,6 +44,7 @@ const MyRoutes = () => {
             <Route exact path="ME" element={<ME />} />
             <Route exact path="MR" element={<MR />} />
             <Route exact path="RA" element={<RA />} />
+            <Route exact path="Technical" element={<Tech />} />
          
           </Route>
           <Route path="/events" element={<Navigate to="CSE" />} />
@@ -55,6 +58,7 @@ const MyRoutes = () => {
           <Route path="/events/MeDetail/:id" element={<MeDetail />} />
           <Route path="/events/MrDetail/:id" element={<MrDetail />} />
           <Route path="/events/RaDetail/:id" element={<RaDetail />} />
+          <Route path="/events/TechDetail/:id" element={<TechDetail />} />
         </Routes>
       </main>
       <Footer />

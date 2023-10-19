@@ -92,6 +92,8 @@ const EventPage = () => {
                 BSH
               </NavLink>
             </div>
+            
+            
               
             <div className={`${classes.tabHead}`}>
               <NavLink
@@ -180,6 +182,18 @@ const EventPage = () => {
                 }
               >
                 RA
+              </NavLink>
+            </div>
+            <div className={`${classes.tabHead}`}>
+              <NavLink
+                to="technical"
+                className={({ isActive }) =>
+                  isActive
+                    ? `${classes.active} ${classes.links}`
+                    : `${classes.links}`
+                }
+              >
+                Technical
               </NavLink>
             </div>
 

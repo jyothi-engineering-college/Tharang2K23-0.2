@@ -13,6 +13,7 @@ const Dropdown = (props) => {
       <li className={classes.drops}><Link to="/events/ME" onClick={props.click} className={classes.links}>ME</Link></li>
       <li className={classes.drops}><Link to="/events/MR" onClick={props.click} className={classes.links}>MR</Link></li>
       <li className={classes.drops}><Link to="/events/RA" onClick={props.click} className={classes.links}>RA</Link></li>
+      <li className={classes.drops}><Link to="/events/Technical" onClick={props.click} className={classes.links}>Technical</Link></li>
             
     </ul>
   );

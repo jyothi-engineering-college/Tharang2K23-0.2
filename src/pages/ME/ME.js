@@ -1,6 +1,6 @@
 import classes from "./ME.module.css";
 import Lists from "../MeDetail/MeLists";
-import EventCard from "../../components/EventCardBSH/EventCard";
+import EventCard from "../../components/EventCard/EventCard";
 import { useEffect } from "react";
 import StayTuned from "../../components/StayTuned/StayTuned";
 

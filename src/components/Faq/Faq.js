@@ -3,15 +3,15 @@ import classes from "./Faq.module.css"
 
 const questions = [
     {
-        question: "How can i participate in Tharang 23?",
-        answer: "Participation in Tharang 2023 is open to everyone and there are no registration fees to be applied."
+        question: "How can i participate in Tharang 23 V2?",
+        answer: "Participation in Tharang 2023 V2 is open to everyone and there are no registration fees to be applied."
     },
     {
-        question: "What are the dates of THARANG 23?",
-        answer: "March 31 and April 01. Events will happen from 9:00 am to 10:00 pm"
+        question: "What are the dates of THARANG 23 V2?",
+        answer: "November 10 and November 11. Events will happen from 9:00 am to 9:00 pm"
     },
     {
-        question: "What is the entry fees for THARANG 23?",
+        question: "What is the entry fees for THARANG 23 V2?",
         answer: "Its totally free of cost but for specefic events it's not"
     },
     {
@@ -47,11 +47,7 @@ const Faq = () => {
             </div>
         })}
 
-            {/* <div className={classes.single}>
-                <div className={classes.question}>How are you?</div>
-                <div className={classes.answer}>I am fine</div>
-                <span className={classes.btn}>+</span>
-            </div> */}
+            
         </div>
     </section>
   )

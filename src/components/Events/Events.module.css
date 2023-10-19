@@ -57,42 +57,33 @@
 }
 
 .button1 {
-  position: relative;
-  background: linear-gradient(to right, #e854e8c7, #a50487c2, #480158f1);
-  /* #e854e8, #a50487, #480158 */
-  border-radius: 5px;
-  box-shadow: rgb(77, 1, 64) 0px 4px 0px 0px;
-  padding: 15px;
-  background-repeat: no-repeat;
-  box-sizing: border-box;
-  width: 210px;
-  height: 49px;
-  color: #fff;
+  padding: 1em 2em;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: #ce33c3;
   border: none;
-  font-size: 20px;
-  transition: all 0.3s ease-in-out;
-  z-index: 1;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  width: 250px;
   text-decoration: none;
+  text-align: center;
 }
 
-.button1::before {
-  content: "";
-  background-color: rgba(215, 5, 163, 0.817);
-  width: 0;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: width 700ms ease-in-out;
-  display: inline-block;
+.button1:hover {
+  background-color: #9f3098;
+  box-shadow: 0px 15px 20px rgba(233, 38, 255, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
 }
 
-.button1:hover::before {
-  width: 100%;
+.button1:active {
+  transform: translateY(-1px);
 }
 @media screen and (max-width: 480px) {
   .eventBox {

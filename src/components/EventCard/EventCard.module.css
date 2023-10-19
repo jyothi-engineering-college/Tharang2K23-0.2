@@ -1,172 +1,223 @@
-
-
 .card {
-    position: relative;
-    margin: 5rem auto 30rem;
-    width: 30rem;
-    color: #fff;
-    padding: 1rem 0.9rem;
-    perspective: 1000px;
-    border-radius: 10px;
+  position: relative;
+  margin: 5rem auto 30rem;
+  width: 30rem;
+  color: #fff;
+  padding: 1rem 0.9rem;
+  perspective: 1000px;
+  border-radius: 10px;
 }
 
 .card.clicked .cardInner {
-    transform: rotateY(180deg);
-    transition:  transform 1s;
+  transform: rotateY(180deg);
+  transition: transform 1s;
 }
 
 .cardInner {
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.6s;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
 }
 
 .imgBox {
-    width: 100%;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
-    border-image-slice: 1;
+  width: 100%;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom right, #5a006a, #e0b5ff, #ffffff);
+  border-image-slice: 1;
 }
 
 .img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .textBox {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1.9rem .3rem;
-    gap: 1.5rem;
-    height: 30rem;
-    justify-content: flex-end;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.9rem 0.3rem;
+  gap: 1.5rem;
+  height: 30rem;
+  justify-content: flex-end;
 }
 
 .heading {
-    font-size: 2.3rem;
-    text-align: center;
-    height: 5rem;
-    font-family: 'Poppins', sans-serif;
+  font-size: 2.3rem;
+  text-align: center;
+  height: 5rem;
+  font-family: "Poppins", sans-serif;
 }
 
 .btn {
-    background-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
-    padding: .5rem 1.7rem;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.8rem;
-    font-weight: 600;
-    color: #fff;
-    transition: all .3s;
-    text-decoration: none;
-    list-style: none;
-    justify-self: flex-end;
+  background-image: linear-gradient(to bottom right, #5a006a, #e0b5ff, #ffffff);
+  padding: 0.5rem 1.7rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s;
+  text-decoration: none;
+  list-style: none;
+  justify-self: flex-end;
 }
 
-.cardFront, .cardBack {
-    position: absolute;
-    backface-visibility: hidden;
-    justify-content: center;
-    
+.cardFront,
+.cardBack {
+  position: absolute;
+  backface-visibility: hidden;
+  justify-content: center;
 }
 
 .cardFront {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 .cardBack {
-    transform: rotateY(180deg) translateZ(1px);
-    margin: 0 auto;
-    backface-visibility: visible;
-    width: 100%;
-    height: 100%;
+  transform: rotateY(180deg) translateZ(1px);
+  margin: 0 auto;
+  backface-visibility: visible;
+  width: 100%;
+  height: 100%;
 }
 
 .cardBack .eventdescr {
-    text-align: center;
-    margin-top: 1rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
 }
 
 .backContent {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 2px solid transparent;
-    border-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
-    border-image-slice: 1;
-    height: 28rem;
-    
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to bottom right, #5a006a, #e0b5ff, #ffffff);
+  border-image-slice: 1;
+  height: 28rem;
 }
 
 button {
-    color: white;
-    text-decoration: none;
-    font-size: 15px;
-    border: none;
-    background: none;
-    font-weight: 600;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  position: relative;
+  padding: 0 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  border: 0;
+  box-shadow: hsl(296, 98%, 22%) 0px 7px 0px 0px;
+  background-color: hsl(296, 79%, 31%);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 31ms cubic-bezier(0.5, 0.7, 0.4, 1);
+  max-height: 40px;
+  max-width: 150px;
 }
 
-button::before, button::after {
-    content: '';
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-image: linear-gradient(to bottom right, #5A006A, #E0B5FF,#FFFFFF);
-    display: block;
-    transition: 0.5s;
+button:before {
+  content: attr(alt);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  inset: 0;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 4px;
+  opacity: 1;
 }
 
-button::before {
-    top: 0;
-    left: 0;
+button:active {
+  box-shadow: none;
+  transform: translateY(7px);
+  transition: 35ms cubic-bezier(0.5, 0.7, 0.4, 1);
 }
 
-button::after {
-    bottom: 0;
-    right: 0;
+button:hover:before {
+  transition: all 0s;
+  transform: translateY(100%);
+  opacity: 0;
 }
 
-button:hover::after, button:hover::before {
-    width: 100%;
+button i {
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  font-style: normal;
+  transition: all 2s ease;
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+button:hover i {
+  transition: all 0.2s ease;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+button:hover i:nth-child(1) {
+  transition-delay: 0.045s;
+}
+
+button:hover i:nth-child(2) {
+  transition-delay: calc(0.045s * 3);
+}
+
+button:hover i:nth-child(3) {
+  transition-delay: calc(0.045s * 4);
+}
+
+button:hover i:nth-child(4) {
+  transition-delay: calc(0.045s * 5);
+}
+
+button:hover i:nth-child(6) {
+  transition-delay: calc(0.045s * 6);
+}
+
+button:hover i:nth-child(7) {
+  transition-delay: calc(0.045s * 7);
+}
+
+button:hover i:nth-child(8) {
+  transition-delay: calc(0.045s * 8);
+}
+
+button:hover i:nth-child(9) {
+  transition-delay: calc(0.045s * 9);
+}
+
+button:hover i:nth-child(10) {
+  transition-delay: calc(0.045s * 10);
 }
 
 @media (max-width: 480px) {
-    
-    .card-container {
-        display: flex;
-        overflow-x: auto;  
-        white-space: nowrap;
-    }
+  .card-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 
-    
+  .card {
+    flex: 0 0 auto;
+    width: calc(100% - 10px);
+    margin-right: 10px;
+  }
 
-    .card {
-       
-        flex: 0 0 auto; 
-        width: calc(100% - 10px); 
-        margin-right: 10px; 
-    }
-    
+  .img {
+    width: 100%;
+    height: 100%;
+  }
 
-    .img {
-        width: 100%;
-        height: 100%;
-    }
-    
-    .heading {
-        font-size: 4rem; 
-    }
+  .heading {
+    font-size: 4rem;
+  }
 }

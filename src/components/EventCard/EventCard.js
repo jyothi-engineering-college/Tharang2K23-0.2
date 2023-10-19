@@ -12,14 +12,13 @@ const EventCard = (props) => {
     event.stopPropagation(); // Prevent card click when the button is clicked
     window.location.href = props.redirectLink; // Redirect to the specified link
   };
-  const isMobile = window.innerWidth <= 768; 
-  
+  const isMobile = window.innerWidth <= 768;
+
   return (
     <div
       className={`${classes.card} ${isClicked ? classes.clicked : ""}`}
       onClick={handleCardClick}
     >
-      
       <div className={classes.cardInner}>
         {/* Front of the card */}
         <div
@@ -27,9 +26,12 @@ const EventCard = (props) => {
           onClick={() => setIsClicked(false)} // Toggle isClicked when clicking on the front
         >
           <div className={classes.imgBox}>
-            <img className={classes.img} src={props.imgSrc} alt={props.heading} />
+            <img
+              className={classes.img}
+              src={props.imgSrc}
+              alt={props.heading}
+            />
           </div>
-          
         </div>
 
         {/* Back of the card */}
@@ -38,24 +40,33 @@ const EventCard = (props) => {
           onClick={() => setIsClicked(false)} // Toggle isClicked when clicking on the back
         >
           <div className={classes.backContent}>
-            
             <div className={classes.eventdescr}>
-            {isMobile ? <h1 className={classes.heading}>{props.heading}</h1> : null}
-            <div style={isMobile ? {display: 'none'} : {}}>
-              <p>{props.eventDescription}</p>
-            </div>
+              {isMobile ? (
+                <h1 className={classes.heading}>{props.heading}</h1>
+              ) : null}
+              <div style={isMobile ? { display: "none" } : {}}>
+                <p>{props.eventDescription}</p>
+              </div>
               <p className={classes.fees}>
-              Registration fees: ₹
-              <span className={classes.amount}>{props.regFee}</span>
-            </p>
-            <p className={classes.cont}>Contact - {props.contact}</p>
+                Registration fees: ₹
+                <span className={classes.amount}>{props.regFee}</span>
+              </p>
+              <p className={classes.cont}>Contact - {props.contact}</p>
             </div>
-            
+
             <button
+              alt="Register"
               className={classes.redirectLink}
               onClick={handleRegisterClick}
             >
-              Register
+              <i>r</i>
+              <i>e</i>
+              <i>g</i>
+              <i>i</i>
+              <i>s</i>
+              <i>t</i>
+              <i>e</i>
+              <i>r</i>
             </button>
           </div>
         </div>

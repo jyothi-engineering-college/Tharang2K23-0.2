@@ -25,10 +25,10 @@ function App() {
      {preloader && <PreLoader />}
       
       <Hero />
-      <PlatinumSponsor />
+      {/* <PlatinumSponsor /> */}
 
       <About />
-      <GoldSponsor />
+      {/* <GoldSponsor /> */}
 
       <Events />
       {/* <Gallery /> */}

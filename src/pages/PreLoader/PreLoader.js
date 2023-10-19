@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import "./preLoader.css";
-import Logo from "./wait.svg";
 
 function PreLoader() {
   const [clickCount, setClickCount] = useState(0);

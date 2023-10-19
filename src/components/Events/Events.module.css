@@ -1,75 +1,74 @@
 .events {
-    padding: 3rem 1.5rem;
+  padding: 3rem 1.5rem;
 }
 
 .eventBox {
-    display: flex;
+  display: flex;
 }
 
 .imgBox {
-    margin: 0 auto;
-    padding: 0 4rem;
+  margin: 0 auto;
+  padding: 0 4rem;
 }
 
-
 .headingBox {
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-basis: 50%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-basis: 50%;
 }
 
 .heading {
-    font-size: 7rem;
-    font-family: 'Poppins';
-    text-transform: uppercase;
-    color: transparent;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #fff;
+  font-size: 7rem;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  color: transparent;
+  font-weight: 700;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #fff;
 }
 
 .para {
-    font-size: 1.8rem;
-    font-family: 'Poppins', sans-serif;
-    line-height: 2.9rem;
-    margin-bottom: 2.5rem;
-    font-weight: 300;
-    color: rgb(239, 214, 239);
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 2.9rem;
+  margin-bottom: 2.5rem;
+  font-weight: 300;
+  color: rgb(239, 214, 239);
 }
 
 .img {
-    width: 85%;
+  width: 85%;
 }
 
 .btn {
-    align-self: flex-start;
-    background-image: linear-gradient(to bottom right,#5A006A, #E0B5FF,#FFFFFF);
-    padding: 1.5rem 1.7rem;
-    border: none;
-    border-radius: 11px;
-    font-size: 2rem;
-    font-weight: 600;
-    color: #fff;
-    transition: all .3s;
-    text-decoration: none;
-    list-style: none;
+  align-self: flex-start;
+  background-image: linear-gradient(to bottom right, #964596, #752a86);
+  padding: 1.5rem 1.7rem;
+  border: none;
+  border-radius: 11px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s;
+  text-decoration: none;
+  list-style: none;
 }
 
 .btn:hover {
-    cursor: pointer;
-    background-image: linear-gradient(to top left,#5A006A, #E0B5FF,#FFFFFF);
-    transition: all .3s;
+  cursor: pointer;
+  background-image: linear-gradient(to bottom right, #752a86, #964596);
+  transition: all 0.3s;
 }
 
 @media screen and (max-width: 480px) {
-    .eventBox {
-        flex-direction: column;
-        gap: 4rem;
-    }
-    
-    .btn {
-        align-self: center;
-    }
+  .eventBox {
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .btn {
+    align-self: center;
+  }
 }

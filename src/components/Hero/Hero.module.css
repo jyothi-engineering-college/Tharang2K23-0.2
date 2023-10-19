@@ -45,10 +45,11 @@
     font-weight: bolder;
     display: inline-block;
     margin-top: 90px;
-    background-color: #ffffff;
+    background-color: #f4d8f5;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 10px;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.848);
 }
 .heading2023{
     font-family:myFirstFont3;
@@ -78,6 +79,7 @@
     font-weight: 100;
     margin-top: 3rem;
     margin-bottom: 1rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.848);
 }
 
 .date {
@@ -88,6 +90,7 @@
     font-weight: 300;
     margin-top: 2rem;
     margin-bottom: 3rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.848);
     
 }
 
@@ -105,6 +108,7 @@
         width: 30rem;
         cursor: pointer;
         transition: all .2s;
+        
 }
 
 .btn:hover {
@@ -135,6 +139,7 @@
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     text-align: center;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.848);
 }
 
 .countdown {

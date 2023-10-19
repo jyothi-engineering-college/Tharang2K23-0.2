@@ -1,5 +1,5 @@
-import classes from "./Cultural.module.css";
-import CseLists from "../CulturalDetail/CulturalListsLists";
+import classes from "../CSE/CSE.module.css";
+import CseLists from "../CulturalDetail/CulturalLists";
 import EventCard from "../../components/EventCard/EventCard";
 import { useEffect } from "react";
 

@@ -25,6 +25,8 @@ import RA from "./pages/RA/RA";
 import RaDetail from "./pages/RaDetail/RaDetail";
 import Tech from "./pages/Technical/Technical";
 import TechDetail from "./pages/TechnicalDetail/TechnicalDetail";
+import Cultural from "./pages/Cultural/Cultural";
+import CulturalDetail from "./pages/CulturalDetail/CulturalDetail";
 
 const MyRoutes = () => {
   return (
@@ -45,6 +47,7 @@ const MyRoutes = () => {
             <Route exact path="MR" element={<MR />} />
             <Route exact path="RA" element={<RA />} />
             <Route exact path="Technical" element={<Tech />} />
+            <Route exact path="Cultural" element={<Cultural />} />
          
           </Route>
           <Route path="/events" element={<Navigate to="CSE" />} />
@@ -59,6 +62,7 @@ const MyRoutes = () => {
           <Route path="/events/MrDetail/:id" element={<MrDetail />} />
           <Route path="/events/RaDetail/:id" element={<RaDetail />} />
           <Route path="/events/TechDetail/:id" element={<TechDetail />} />
+          <Route path="/events/CulturalDetail/:id" element={<CulturalDetail />} />
         </Routes>
       </main>
       <Footer />

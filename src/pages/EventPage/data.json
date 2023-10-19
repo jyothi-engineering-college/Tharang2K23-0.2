@@ -1,0 +1,14 @@
+[
+    { "path": "AD", "name": "AD" },
+    { "path": "BSH", "name": "BSH" },
+    { "path": "CSE", "name": "CSE" },
+    { "path": "cultural", "name": "Cultural" },
+    { "path": "CE", "name": "CE" },
+    { "path": "ECE", "name": "ECE" },
+    { "path": "EEE", "name": "EEE" },
+    { "path": "ME", "name": "ME" },
+    { "path": "MR", "name": "MR" },
+    { "path": "RA", "name": "RA" },
+    { "path": "technical", "name": "Technical" }
+  ]
+  

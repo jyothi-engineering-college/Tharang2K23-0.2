@@ -195,4 +195,39 @@
         column-gap: 1rem;
     }
 }
+@media screen and (max-width: 768px) {
+  .hero {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 2rem 0; /* Example padding */
+  }
+
+  .herobox {
+    padding: 2rem; /* Adjust padding for smaller screens */
+  }
+
+  .heading {
+    font-size: 5rem; /* Adjust font size for smaller screens */
+    margin-top: 40px; /* Adjust margin for smaller screens */
+  }
+
+  .caption {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    margin-top: 1rem; /* Adjust margin for smaller screens */
+  }
+
+  .date {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    margin-top: 1.5rem; /* Adjust margin for smaller screens */
+  }
+
+  .btn {
+    width: 100%; /* Make button full width on smaller screens */
+  }
+
+  .countdownbox {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+    grid-template-columns: repeat(4, 1fr); /* Adjust grid columns for smaller screens */
+  }
+}
 

@@ -216,7 +216,7 @@ const Header = () => {
                 style={{ color: "white", textDecoration: "none" }}
               >
                 <Link
-                  className={classes.homeLink}
+                  className={classes.redglow}
                   to="/"
                   onClick={(e) => {
                     e.preventDefault();
@@ -225,7 +225,7 @@ const Header = () => {
                 >
                   Campus Ambassador
                 </Link>
-              </Drop>
+              </Drop>     
             </li>
           </ul>
         </div>

@@ -95,4 +95,8 @@
   .btn {
     align-self: center;
   }
+  .heading{
+    animation: none;
+  }
 }
+

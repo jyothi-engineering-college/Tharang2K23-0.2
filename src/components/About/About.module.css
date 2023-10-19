@@ -1,99 +1,112 @@
 @font-face {
-    font-family:myFirstFont2;
-    src: url(Blanka-Regular.otf);
+  font-family: myFirstFont2;
+  src: url(Blanka-Regular.otf);
 }
 
 .aboutSec {
-    height: 100%;
-    padding: 3rem 1.5rem;
+  height: 100%;
+  padding: 3rem 1.5rem;
 }
 
 .about {
-    width: 100%;
-    display: flex;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.432);
-    padding: 4rem 5rem;
-    border-radius: 15px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.432);
+  padding: 4rem 5rem;
+  border-radius: 15px;
 }
 
 @media screen and (max-width: 480px) {
-    .about {
-        flex-direction: column;
-    }
+  .about {
+    flex-direction: column;
+  }
 }
 
 .details {
-    flex-basis: 75%;
-    color: #fff;
+  flex-basis: 75%;
+  color: #fff;
 }
 
 .heading {
-    font-size: 4rem;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-    font-family: 'Poppins', sans-serif; /* Add this line to set the font family */
-    margin-bottom: 0;
+  font-size: 4rem;
+  color: #ecccec;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 0;
 }
 
-
 .heading1 {
-    font-size: 9rem;
-    font-family: 'Poppins';
-    text-transform: uppercase;
-    color: transparent;
-    font-weight: 700;
-    -webkit-text-stroke-width: 1.5px;
-    -webkit-text-stroke-color: #fff;
+  font-size: 7rem;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  color: transparent;
+  font-weight: 700;
+  -webkit-text-stroke-width: 1.7px;
+  -webkit-text-stroke-color: #9c198d;
+  text-shadow: 0 0 3px rgb(7, 2, 1), 0 0 2px rgb(45, 10, 10),
+    0 0 1px rgb(152, 43, 145);
+  animation: glow 0.5s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 1px rgb(23, 6, 5), 0 0 1px rgb(205, 44, 16),
+      0 0 1px rgb(84, 12, 12);
+  }
+  100% {
+    text-shadow: 0 0 10px rgb(0, 0, 0), 0 0 12px rgb(139, 8, 8),
+      0 0 1px rgb(194, 10, 65);
+  }
 }
 
 @media screen and (max-width: 480px) {
-    .heading1 {
-        font-size: 7.5rem;
-        margin-bottom: 2.5rem;
-    }
+  .heading1 {
+    font-size: 7.5rem;
+    margin-bottom: 2.5rem;
+  }
 }
 
 .para {
-    font-size: 1.5rem;
-    color: #ecccec;
-    font-family: 'Poppins', sans-serif;
-    line-height: 2.5rem;
-    opacity: 90%;
+  font-size: 1.5rem;
+  color: #ecccec;
+  font-family: "Poppins", sans-serif;
+  line-height: 2.5rem;
+  opacity: 90%;
 }
 
 .para:not(:last-child) {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .composition {
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 480px) {
-    .about {
-        gap: 4rem;
-    }
-    .details {
-        order: 2;
-    }
-    .composition {
-        order: 1;
-    }
+  .about {
+    gap: 4rem;
+  }
+  .details {
+    order: 2;
+  }
+  .composition {
+    order: 1;
+  }
 
-    .heading1 {
-        font-size: 7rem;
-    }
+  .heading1 {
+    font-size: 7rem;
+  }
 }
 
 .images {
-    box-shadow: 0 1.5rem 4rem rgba(#000, .4);
-    border-radius: 2px;
-    transition: all .2s;
-    z-index: 20;
-    outline-offset: 2rem;
-    width: 95%;
+  box-shadow: 0 1.5rem 4rem rgba(#000, 0.4);
+  border-radius: 2px;
+  transition: all 0.2s;
+  z-index: 20;
+  outline-offset: 2rem;
+  width: 95%;
 }
-

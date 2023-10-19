@@ -26,14 +26,15 @@
   cursor: pointer;
   padding: 0.3rem 1rem;
   border-bottom: 3px solid transparent;
-  border-image: linear-gradient(to bottom right, #af5dc1, #a310a3);
+  border-image: linear-gradient(to bottom left, #e854e8, #a50487, #480158);
+
   border-image-slice: 1;
   color: #fff;
 }
 
 .tabHead:hover,
 .active {
-  background-image: linear-gradient(to bottom right, #a310a3, #af5dc1);
+  background-image: linear-gradient(to bottom right, #e854e8, #a50487, #480158);
   border-radius: 5px 5px 0 0;
   padding: 0.3rem 1rem;
 }

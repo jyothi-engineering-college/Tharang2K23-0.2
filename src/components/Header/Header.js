@@ -21,7 +21,9 @@ const Header = () => {
   };
 
   return (
-    <header className={`${!scrolled ? classes.header : classes.scrolledHeader}`}>
+    <header
+      className={`${!scrolled ? classes.header : classes.scrolledHeader}`}
+    >
       <div className={classes.elements}>
         <div className={classes.logobox}>
           <Drop
@@ -40,27 +42,73 @@ const Header = () => {
         <div className={classes.navbox}>
           <ul className={classes.nav}>
             <li className={classes.navLink}>
-              <Drop to="home" spy="true" smooth={true} offset={-100} duration={600} style={{ color: "white", textDecoration: "none" }}>
-                <Link className={classes.homeLink} to="/#home">Home</Link>
+              <Drop
+                to="home"
+                spy="true"
+                smooth={true}
+                offset={-100}
+                duration={600}
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <Link className={classes.homeLink} to="/#home">
+                  Home
+                </Link>
               </Drop>
             </li>
-            <li className={`${classes.dropLink}`} onClick={() => setDrop(!drop)}>
+            <li
+              className={`${classes.dropLink}`}
+              onClick={() => setDrop(!drop)}
+            >
               {drop ? <Dropdown click={() => setDrop(!drop)} /> : ""}Events
-              <FontAwesomeIcon size="sm" style={{ display: "inline-block", marginLeft: ".3rem", color: "white" }} icon={faArrowDown} fade />
+              <FontAwesomeIcon
+                size="sm"
+                style={{
+                  display: "inline-block",
+                  marginLeft: ".3rem",
+                  color: "#a50487",
+                }}
+                icon={faArrowDown}
+                fade
+              />
             </li>
             <li className={classes.navLink}>
-              <Drop to="about" spy="true" smooth={true} offset={-120} duration={600} style={{ color: "white", textDecoration: "none" }}>
-                <Link className={classes.homeLink} to="/home#about">About</Link>
+              <Drop
+                to="about"
+                spy="true"
+                smooth={true}
+                offset={-120}
+                duration={600}
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <Link className={classes.homeLink} to="/home#about">
+                  About
+                </Link>
               </Drop>
             </li>
-            
+
             <li className={classes.navLink}>
-              <Drop to="contact" spy="true" smooth={true} offset={-120} duration={600} style={{ color: "white", textDecoration: "none" }}>
-                <Link className={classes.homeLink} to="/home#contact">Contact</Link>
+              <Drop
+                to="contact"
+                spy="true"
+                smooth={true}
+                offset={-120}
+                duration={600}
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <Link className={classes.homeLink} to="/home#contact">
+                  Contact
+                </Link>
               </Drop>
             </li>
             <li className={classes.navLink}>
-              <Drop to="contact" spy="true" smooth={true} offset={-120} duration={600} style={{ color: "white", textDecoration: "none" }}>
+              <Drop
+                to="contact"
+                spy="true"
+                smooth={true}
+                offset={-120}
+                duration={600}
+                style={{ color: "white", textDecoration: "none" }}
+              >
                 <Link
                   className={classes.homeLink}
                   to="/"
@@ -75,33 +123,98 @@ const Header = () => {
             </li>
           </ul>
           <div className={classes.hamburger} onClick={() => setMobile(!mobile)}>
-            {mobile ? <FontAwesomeIcon icon={faXmark} style={{ color: "white" }} size="3x" /> : <FiMenu size={20} />}
+            {mobile ? (
+              <FontAwesomeIcon
+                icon={faXmark}
+                style={{ color: "white" }}
+                size="3x"
+              />
+            ) : (
+              <FiMenu size={20} />
+            )}
           </div>
         </div>
         <div className={`${!mobile ? classes.none : classes.mobileBox}`}>
           <ul className={classes.mobileNav}>
             <li>
-              <Drop onClick={() => setMobile(!mobile)} to="home" spy="true" smooth={true} offset={-120} duration={600} style={{ color: "white", textDecoration: "none" }}>
-                <Link className={classes.homeLink} to="/#home">Home</Link>
+              <Drop
+                onClick={() => setMobile(!mobile)}
+                to="home"
+                spy="true"
+                smooth={true}
+                offset={-120}
+                duration={600}
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <Link className={classes.homeLink} to="/#home">
+                  Home
+                </Link>
               </Drop>
             </li>
             <li className={`${classes.mobLink}`} onClick={() => setDrop(!drop)}>
-              {drop ? <Dropdown click={() => { setDrop(!drop); setMobile(!mobile); }} /> : ""}Events
-              <FontAwesomeIcon size="sm" style={{ display: "inline-block", marginLeft: ".3rem", color: "white" }} icon={faArrowDown} fade />
+              {drop ? (
+                <Dropdown
+                  click={() => {
+                    setDrop(!drop);
+                    setMobile(!mobile);
+                  }}
+                />
+              ) : (
+                ""
+              )}
+              Events
+              <FontAwesomeIcon
+                size="sm"
+                style={{
+                  display: "inline-block",
+                  marginLeft: ".3rem",
+                  color: "white",
+                }}
+                icon={faArrowDown}
+                fade
+              />
             </li>
             <li>
-              <Drop onClick={() => setMobile(!mobile)} to="about" spy="true" smooth={true} offset={-100} duration={600} style={{ color: "white", textDecoration: "none" }}>
-                <Link className={classes.homeLink} to="/home#about">About</Link>
+              <Drop
+                onClick={() => setMobile(!mobile)}
+                to="about"
+                spy="true"
+                smooth={true}
+                offset={-100}
+                duration={600}
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <Link className={classes.homeLink} to="/home#about">
+                  About
+                </Link>
               </Drop>
             </li>
-            
+
             <li>
-              <Drop onClick={() => setMobile(!mobile)} to="contact" spy="true" smooth={true} offset={-100} duration={600} style={{ color: "white", textDecoration: "none" }}>
-                <Link className={classes.homeLink} to="/home#contact">Contact</Link>
+              <Drop
+                onClick={() => setMobile(!mobile)}
+                to="contact"
+                spy="true"
+                smooth={true}
+                offset={-100}
+                duration={600}
+                style={{ color: "white", textDecoration: "none" }}
+              >
+                <Link className={classes.homeLink} to="/home#contact">
+                  Contact
+                </Link>
               </Drop>
             </li>
             <li>
-              <Drop onClick={() => setMobile(!mobile)} to="contact" spy="true" smooth={true} offset={-100} duration={600} style={{ color: "white", textDecoration: "none" }}>
+              <Drop
+                onClick={() => setMobile(!mobile)}
+                to="contact"
+                spy="true"
+                smooth={true}
+                offset={-100}
+                duration={600}
+                style={{ color: "white", textDecoration: "none" }}
+              >
                 <Link
                   className={classes.homeLink}
                   to="/"

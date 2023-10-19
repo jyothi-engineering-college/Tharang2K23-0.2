@@ -89,6 +89,7 @@
 
   .homeLink {
       color: inherit;
+      text-decoration: none;
   }
 
   .navLink:hover:after {
@@ -157,7 +158,6 @@
 }
 
 .mobLink {
-    display: inline;
     padding: 2rem;
     font-size: 2.7rem;
     background-image: linear-gradient(to bottom right,#5A006A, #E0B5FF,#FFFFFF);

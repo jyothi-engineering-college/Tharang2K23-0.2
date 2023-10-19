@@ -5,6 +5,10 @@
     font-family: myFirstFont2;
     src: url(Blanka-Regular.otf);
 }
+@font-face {
+    font-family: myFirstFont3;
+    src: url(Calamity-Regular.otf);
+}
 
 .hero {
     width: 100%;
@@ -43,9 +47,15 @@
     letter-spacing: 10px;
 }
 .heading2023{
-    font-family:myFirstFont2;
+    font-family:myFirstFont3;
     margin-left: 10px;
 }
+.heading20{
+    font-family:myFirstFont3;
+    margin-left: 10px;
+    font-size: 80px;
+}
+
 
 .tharang, .heading2023 {
     line-height: 1; /* Set line-height to 1 to ensure the same height */
@@ -167,3 +177,4 @@
         column-gap: 1rem;
     }
 }
+

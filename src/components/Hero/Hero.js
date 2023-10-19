@@ -48,7 +48,8 @@ const Hero = () => {
           <center>
           <h1 className={classes.heading}>
         <span className={classes.tharang}>THARANG</span>{" "}
-        <span className={classes.heading2023}>2023</span>
+        <span className={classes.heading2023}>'23</span>
+        <span className={classes.heading20}>2.0</span>
       </h1>
           </center>
           <h4 className={classes.caption}>

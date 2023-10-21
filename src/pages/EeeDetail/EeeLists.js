@@ -1,81 +1,49 @@
 const AdLists = [
-   // {
-   //    id: 0,
-   //    name: "pencildrawing",
-   //    para: "Are you ready to beat you boredom?and fly high in the world of imagination,then the opportunity is here,𝐊𝐀𝐑𝐌𝐀'𝟐𝟐 brings you '𝐋𝐀𝐏𝐈𝐙' 𝐏𝐞𝐧𝐜𝐢𝐥 𝐃𝐫𝐚𝐰𝐢𝐧𝐠 𝐂𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐨𝐧 ,Let your minds step into world of imagination...let's be engaged for while lost in thoughts... Let your white papers be kissed by pencil..",
-   //    imgSrc: "/assets/EEE/boxcricket.png",
-   //    heading: "Box Cricket",
-   //    rule1: "1. Entries must follow the competition theme.",
-   //    rule2: "2. It is an open event, on the spot registrations are allowed.",
-   //    rule3: "3. Only one entry per person, no group entries allowed.",
-   //    rule4: "4. Participants are required to bring their own pencils.",
-   //    rule5: "5. Decision of the judges will be final and cannot be challenged.",
-   //    rule6: "6. There will be a time limit for completion.",
-   //    rule7: "7. A finished art should not contain any other materials.",
-   //    rule8:
-   //       "8. Each participants will receive a registration number after the registration, it should be written on the top left corner of the final art.",
+  {
+    id: 1,
+    name: "THEKKINI 3.0",
+    imgSrc: "/assets/EEE/thekkini.jpg",
+    heading: "THEKKINI 3.0",
+    desc: "HERE, DARK SHADOWS LURK IN THE AIR LIKE FOG SPREADING ON THE WALLS. SHADOWS SO DEATHLY ROAM, THEY KILL FLOWERS WITH A GENTLE TOUCH. BUT THE WORST, WHISPERS OF LONG-DEAD PEOPLE ECHO ALONGSIDE THE SOUND THEIR, DEPRESSED LAUGHS WHICH ARE NOW GROANS. A HORROR HOUSE WHICH LEAVES YOU HAUNTED FOREVER.",
+    regFee: "Free",
+    contact: "Jovan Jain P , Phone number  9400234396",
+    redirectLink:
+      "https://drive.google.com/open?id=1oIPND_XK3_W9LeiUvd_qEyxTtbfPpElt",
+  },
+  {
+    id: 2,
+    name: "KSEB Expo",
+    imgSrc: "/assets/EEE/ksebexpo.jpg",
+    heading: "KSEB Expo",
+    desc: "The KSEB Expo 2023 is an exciting event showcasing the latest advancements in electrical and power technologies, promoting innovation and exploration in our college.",
+    regFee: "Free",
+    contact: "Abhinav K , Phone number  8129290424",
+    redirectLink:
+      "https://drive.google.com/open?id=1-H6aWqS5ZLYmNblP5b8x_ozHnfblC39j",
+  },
 
-   //    // criteria: ["Will update the rules and criteria on the website."],
-
-   //    regFee: " 50/- per person",
-
-   //    contact1: "Arjun KP | 8075551219",
-   //    contact2: "Kavyanjali | 7559031951",
-
-   //    paymentLink: "https://rzp.io/l/Pencil-Drawing",
-   //    redirectLink: "/events/cultural/pencildrawing",
-   // },
-   // {
-   //    id: 1,
-   //    name: "virtuosa",
-   //    para: "Are you ready to beat you boredom?and fly high in the world of imagination,then the opportunity is here,𝐊𝐀𝐑𝐌𝐀'𝟐𝟐 brings you '𝐋𝐀𝐏𝐈𝐙' 𝐏𝐞𝐧𝐜𝐢𝐥 𝐃𝐫𝐚𝐰𝐢𝐧𝐠 𝐂𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐨𝐧 ,Let your minds step into world of imagination...let's be engaged for while lost in thoughts... Let your white papers be kissed by pencil..",
-   //    imgSrc: "/assets/EEE/linerobot.jpg",
-   //    heading: "Virtuosa",
-   //    rule1: "1. Entries must follow the competition theme.",
-   //    rule2: "2. It is an open event, on the spot registrations are allowed.",
-   //    rule3: "3. Only one entry per person, no group entries allowed.",
-   //    rule4: "4. Participants are required to bring their own pencils.",
-   //    rule5: "5. Decision of the judges will be final and cannot be challenged.",
-   //    rule6: "6. There will be a time limit for completion.",
-   //    rule7: "7. A finished art should not contain any other materials.",
-   //    rule8:
-   //       "8. Each participants will receive a registration number after the registration, it should be written on the top left corner of the final art.",
-
-   //    // criteria: ["Will update the rules and criteria on the website."],
-
-   //    regFee: " 50/- per person",
-
-   //    contact1: "Arjun KP | 8075551219",
-   //    contact2: "Kavyanjali | 7559031951",
-
-   //    paymentLink: "https://rzp.io/l/Pencil-Drawing",
-   //    redirectLink: "/events/cultural/pencildrawing",
-   // },
-   // {
-   //    id: 2,
-   //    name: "pencildrawing",
-   //    para: "Are you ready to beat you boredom?and fly high in the world of imagination,then the opportunity is here,𝐊𝐀𝐑𝐌𝐀'𝟐𝟐 brings you '𝐋𝐀𝐏𝐈𝐙' 𝐏𝐞𝐧𝐜𝐢𝐥 𝐃𝐫𝐚𝐰𝐢𝐧𝐠 𝐂𝐨𝐦𝐩𝐞𝐭𝐢𝐭𝐢𝐨𝐧 ,Let your minds step into world of imagination...let's be engaged for while lost in thoughts... Let your white papers be kissed by pencil..",
-   //    imgSrc: "/assets/EEE/thekkini.png",
-   //    heading: "Wrong turn",
-   //    rule1: "1. Entries must follow the competition theme.",
-   //    rule2: "2. It is an open event, on the spot registrations are allowed.",
-   //    rule3: "3. Only one entry per person, no group entries allowed.",
-   //    rule4: "4. Participants are required to bring their own pencils.",
-   //    rule5: "5. Decision of the judges will be final and cannot be challenged.",
-   //    rule6: "6. There will be a time limit for completion.",
-   //    rule7: "7. A finished art should not contain any other materials.",
-   //    rule8:
-   //       "8. Each participants will receive a registration number after the registration, it should be written on the top left corner of the final art.",
-
-   //    // criteria: ["Will update the rules and criteria on the website."],
-
-   //    regFee: " 50/- per person",
-
-   //    contact1: "Arjun KP | 8075551219",
-   //    contact2: "Kavyanjali | 7559031951",
-
-   //    paymentLink: "https://rzp.io/l/Pencil-Drawing",
-   //    redirectLink: "/events/cultural/pencildrawing",
-   // }
+  {
+    id: 3,
+    name: "Voice of ANNAMKUTTY",
+    imgSrc: "/assets/EEE/voiceofannamkutty.jpg",
+    heading: "Voice of ANNAMKUTTY",
+    desc: "Join us for an enlightening moment with renowned actor Joseph Annamkutty Jose. Discover the art of acting, industry insights, and get inspired in this college talk show.",
+    regFee: "Free",
+    contact: "Hithin AU , Phone number  8330816533",
+    redirectLink:
+      "https://drive.google.com/open?id=1KcSjq1MWNqOneVOEkRZlHVLAg0-SY90S",
+  },
+  {
+    id: 4,
+    name: "VOLT CRUSH",
+    imgSrc: " /assets/EEE/voltcrush.jpg",
+    heading: "VOLT CRUSH",
+    desc: "OPPORTUNITY TO EXPOSE THE ACQUIRED SKILL IN ELECTRICAL ENGINEERING. TO APPLY ENGINEERING SKILLS TO SOLVE COMPLEX ELETRICAL ENGINEERING PROBLEMS.",
+    regFee: "Free",
+    contact: "Akshay PM , Phone number  7907891895",
+    redirectLink:
+      "https://drive.google.com/open?id=1zMQu-bfHDAZi2Rwo-zg9FylsmVCfFafN",
+  },
 ];
+
 export default AdLists;

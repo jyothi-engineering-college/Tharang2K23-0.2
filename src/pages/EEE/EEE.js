@@ -1,31 +1,33 @@
 import classes from "./EEE.module.css";
-import Lists from "../EeeDetail/EeeLists";
-import EventCard from "../../components/EventCard/EventCard";
+import EeeLists from "../EeeDetail/EeeLists";
+import EventCard from "../../components/EventCardR/EventCard.js";
 import { useEffect } from "react";
-import StayTuned from "../../components/StayTuned/StayTuned";
 
-const EEE = () => {
+const Eee = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  return (
-    <div className={classes.EEE}>
-      {Lists.length > 0 ? (
-      Lists.map((list) => {
-        return (
-          <EventCard
-            key={list.id}
-            imgSrc={list.imgSrc}
-            heading={list.heading}
-            redirectLink={list.redirectLink}
-            />
-            );
-          })
-        ) : (
-          <StayTuned />
-        )}
-      </div>
-    );
-  };
+    window.scrollTo(0, 0);
+  }, []);
 
-export default EEE;
+  return (
+    <div className={classes.Eee}>
+      {EeeLists.map((list) => {
+        return (
+          <div key={list.id}>
+            <EventCard
+              eventtitle={list.heading}
+              eventDescription={list.desc}
+              imgSrc={list.imgSrc}
+              heading={list.name}  
+              regFee={list.regFee} 
+              contact={list.contact} 
+              redirectLink={`/events/EeeDetail/${list.name}`}
+            />
+            <br />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
+
+export default Eee;

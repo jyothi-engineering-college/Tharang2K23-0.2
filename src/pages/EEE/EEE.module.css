@@ -1,4 +1,4 @@
-.EEE {
+.Eee {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -57,16 +57,14 @@
     list-style: none;
 }
 
-@media screen and (max-width:480px) {
-
+@media screen and (max-width: 480px) {
     .btn {
         font-size: 1.7rem;
         padding: .8rem 2.6rem;
     }
-
 }
 
-@media screen and (max-width:390px) {
+@media screen and (max-width: 390px) {
     /* .cultural {
         grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
     } */

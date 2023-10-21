@@ -28,6 +28,8 @@ import TechDetail from "./pages/TechnicalDetail/TechnicalDetail";
 import Cultural from "./pages/Cultural/Cultural";
 import CulturalDetail from "./pages/CulturalDetail/CulturalDetail";
 
+
+
 const MyRoutes = () => {
   return (
     <Fragment>

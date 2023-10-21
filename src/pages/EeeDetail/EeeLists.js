@@ -5,7 +5,7 @@ const AdLists = [
     imgSrc: "/assets/EEE/thekkini.jpg",
     heading: "THEKKINI 3.0",
     desc: "HERE, DARK SHADOWS LURK IN THE AIR LIKE FOG SPREADING ON THE WALLS. SHADOWS SO DEATHLY ROAM, THEY KILL FLOWERS WITH A GENTLE TOUCH. BUT THE WORST, WHISPERS OF LONG-DEAD PEOPLE ECHO ALONGSIDE THE SOUND THEIR, DEPRESSED LAUGHS WHICH ARE NOW GROANS. A HORROR HOUSE WHICH LEAVES YOU HAUNTED FOREVER.",
-    regFee: "Free",
+    regFee: " per person",
     contact: "Jovan Jain P , Phone number  9400234396",
     redirectLink:
       "https://drive.google.com/open?id=1oIPND_XK3_W9LeiUvd_qEyxTtbfPpElt",
@@ -39,7 +39,7 @@ const AdLists = [
     imgSrc: " /assets/EEE/voltcrush.jpg",
     heading: "VOLT CRUSH",
     desc: "OPPORTUNITY TO EXPOSE THE ACQUIRED SKILL IN ELECTRICAL ENGINEERING. TO APPLY ENGINEERING SKILLS TO SOLVE COMPLEX ELETRICAL ENGINEERING PROBLEMS.",
-    regFee: "Free",
+    regFee: " 25 /- per person",
     contact: "Akshay PM , Phone number  7907891895",
     redirectLink:
       "https://drive.google.com/open?id=1zMQu-bfHDAZi2Rwo-zg9FylsmVCfFafN",

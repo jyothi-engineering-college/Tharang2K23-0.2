@@ -20,7 +20,7 @@ const Eee = () => {
               heading={list.name}  
               regFee={list.regFee} 
               contact={list.contact} 
-              redirectLink={`/events/EeeDetail/${list.name}`}
+              redirectLink={list.redirectLink}
             />
             <br />
           </div>

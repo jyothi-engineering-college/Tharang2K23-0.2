@@ -8,33 +8,7 @@ const ContactUs = () => {
         <div className={classes.contentBox}>
 
             <Faq />
-          {/* <div className={classes.persons}>
-
-            <div className={classes.personBox}>
-              <h3 className={classes.personHeading}>Shamsudheen</h3>
-              <div className={classes.details}>
-                <p>
-                  Chairman<br></br>Union KMCT
-                </p>
-                <a className={classes.anchor} href="tel:+917012824370">
-                  +91 7012 824 370
-                </a>
-              </div>
-            </div>
-
-            <div className={classes.personBox}>
-              <h3 className={classes.personHeading}>Sithara Beegam</h3>
-              <div className={classes.details}>
-                <p>
-                  Vice Chairman<br></br>Union KMCT
-                </p>
-                <a className={classes.anchor} href="tel:+918592002134">
-                  +91 8592 002 134
-                </a>
-              </div>
-            </div>
-          </div> */}
-
+          
           <div className={classes.mapBox}>
             <iframe
               className={classes.map}

@@ -1,8 +1,7 @@
+import React, { useEffect } from "react";
 import classes from "./AD.module.css";
-import AdLists from "../AdDetail/AdLists";
-import EventCard from "../../components/EventCard/EventCard";
-import { useEffect } from "react";
-import StayTuned from "../../components/StayTuned/StayTuned"; // Import the StayTuned component
+import ADLists from "../AdDetail/AdLists";
+import EventCard from "../../components/EventCard/EventCard.js";
 
 const AD = () => {
   useEffect(() => {
@@ -11,20 +10,20 @@ const AD = () => {
 
   return (
     <div className={classes.AD}>
-      {AdLists.length > 0 ? (
-        AdLists.map((list) => {
-          return (
-            <EventCard
-              key={list.id}
-              imgSrc={list.imgSrc}
-              heading={list.heading}
-              redirectLink={list.redirectLink}
-            />
-          );
-        })
-      ) : (
-        <StayTuned />
-      )}
+      {ADLists.map((list) => (
+        <div key={list.id}>
+          <EventCard
+            eventtitle={list.heading}
+            eventDescription={list.desc}
+            imgSrc={list.imgSrc}
+            heading={list.name}
+            regFee={list.regFee}
+            contact={list.contact}
+            redirectLink={list.redirectLink}
+          />
+          <br />
+        </div>
+      ))}
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Events = () => {
         </div>
 
         <div className={classes.headingBox}>
-          <h3 className={classes.heading}>Tharang 23 Events</h3>
+          <h3 className={classes.heading}>Tharang 23 2.0 Events</h3>
           <p className={classes.para}>
             Tharang typically includes a range of events such as coding
             challenges, hackathons, robotics competitions, workshops,

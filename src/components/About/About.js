@@ -5,15 +5,15 @@ const About = () => {
     <section id="about" className={classes.aboutSec}>
       <div className={classes.about}>
         <div className={classes.details}>
-          <h2 className={classes.heading1}>Tharang 2023 V2</h2>
+          <h2 className={classes.heading1}>Tharang 2023 2.0</h2>
           <p className={classes.para}>
             Tharang is a largest Techno Cultural Fest conducted annually by the
             students of Jyothi Engineering College, Thrissur. Tharang, since its
             inception, has evolved into one of the biggest events for tech-wits
-            and creative minds across the state. The new edition "Tharang 2023"
+            and creative minds across the state. The new edition "Tharang 2023 2.0"
             is not different either. The fest brings together the latest in
             technology, automobiles, workshop, games, arts, dance and music, all
-            inside a jam packed session of two days, march 31st and apri 1st.
+            inside a jam packed session of two days, November 10 and November 11.
           </p>
 
           <p className={classes.para}>

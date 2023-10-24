@@ -1,6 +1,6 @@
 import classes from "../CSE/CSE.module.css";
 import CseLists from "../CulturalDetail/CulturalLists";
-import EventCard from "../../components/EventCard/EventCard";
+import EventCard from "../../components/EventCardR/EventCard";
 import { useEffect } from "react";
 
 const Cultural = () => {

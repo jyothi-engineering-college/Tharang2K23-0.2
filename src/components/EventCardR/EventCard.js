@@ -51,7 +51,8 @@ const EventCard = (props) => {
                 Registration fees: ₹
                 <span className={classes.amount}>{props.regFee}</span>
               </p>
-              <p className={classes.cont}>Contact - {props.contact}</p>
+              <p>Contact</p>
+              <p className={classes.cont} >{props.contact}</p>
             </div>
 
             <button

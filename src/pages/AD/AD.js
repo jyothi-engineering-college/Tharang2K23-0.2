@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import classes from "./AD.module.css";
 import ADLists from "../AdDetail/AdLists";
-import EventCard from "../../components/EventCard/EventCard.js";
+import EventCard from "../../components/EventCardR/EventCard.js";
 
 const AD = () => {
   useEffect(() => {

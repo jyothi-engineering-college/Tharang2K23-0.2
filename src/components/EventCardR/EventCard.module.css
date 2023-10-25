@@ -1,12 +1,16 @@
 .card {
   position: relative;
   margin: 5rem auto 30rem;
-  width: 30rem;
+  width: auto;
+  /* Adjust width based on image */
+  height: auto;
+  /* Adjust height based on image */
   color: #fff;
   padding: 1rem 0.9rem;
   perspective: 1000px;
   border-radius: 10px;
 }
+
 
 .card.clicked .cardInner {
   transform: rotateY(180deg);
@@ -21,15 +25,20 @@
 }
 
 .imgBox {
-  width: 100%;
+  width: auto;
+  /* Adjust width based on image */
+  height: auto;
+  /* Adjust height based on image */
   border: 2px solid transparent;
   border-image: linear-gradient(to bottom right, #5a006a, #e0b5ff, #ffffff);
   border-image-slice: 1;
 }
 
 .img {
-  width: 100%;
-  height: 100%;
+  display: block;
+  max-width: 100%;
+  /* Ensure the image is responsive */
+  height: auto;
   object-fit: cover;
 }
 
@@ -199,25 +208,40 @@ button:hover i:nth-child(10) {
   transition-delay: calc(0.045s * 10);
 }
 
-@media (max-width: 480px) {
-  .card-container {
+@media (max-width: 768px) {
+  .card {
     display: flex;
     overflow-x: auto;
     white-space: nowrap;
-  }
-
-  .card {
     flex: 0 0 auto;
-    width: calc(100% - 10px);
-    margin-right: 10px;
+    width: 30vh;
+    height: 42vh;
+    margin: 2rem auto;
+    padding: 0.5rem;
+    
   }
 
   .img {
     width: 100%;
-    height: 100%;
   }
 
   .heading {
-    font-size: 4rem;
+    font-size: 1.8rem;
+    margin: 0.5rem 0;
+  }
+
+  .cardBack .eventdescr p {
+    font-size: 0.8rem;
+    margin: 0.2rem 0;
+  }
+
+  .redirectLink {
+    font-size: 1rem;
+    max-width: 120px;
+    max-height: 35px;
+  }
+
+  button i {
+    font-size: 12px;
   }
 }

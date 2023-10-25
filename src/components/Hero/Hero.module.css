@@ -9,9 +9,10 @@
     font-family: myFirstFont3;
     src: url(Calamity-Regular.otf);
 }
+
 @font-face {
     font-family: bit;
-    src: url(joystix monospace.otf);
+    src: url(joystix-monospace.otf);
 }
 
 .hero {
@@ -150,7 +151,7 @@
 }
 
 .column {
-    font-size: 3rem;
+    font-size: 6rem;
     font-weight: 600;
     margin: 0;
     padding: 0;
@@ -192,8 +193,11 @@
     }
 
     .countdownbox {
-        column-gap: 1rem;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem; /* space between columns */
+      }
 }
 @media screen and (max-width: 768px) {
   .hero {
@@ -229,5 +233,16 @@
     padding: 2rem 1rem; /* Adjust padding for smaller screens */
     grid-template-columns: repeat(4, 1fr); /* Adjust grid columns for smaller screens */
   }
-}
+  
 
+  .countdownbox .countdown:nth-child(7),
+  .countdownbox .column:nth-child(6) {
+    display: none;
+  }
+
+  /* Make days and hours take up the full width on mobile */
+  .countdownbox .countdown {
+    flex: 1; /* this makes each countdown box take up equal space */
+    text-align: center; /* center the content */
+  }
+}

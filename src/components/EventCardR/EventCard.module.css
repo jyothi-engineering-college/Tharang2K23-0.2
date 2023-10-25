@@ -1,14 +1,14 @@
 .card {
   position: relative;
   margin: 5rem auto 30rem;
-  width: auto;
-  /* Adjust width based on image */
-  height: auto;
-  /* Adjust height based on image */
+  width: 30rem; /* Set a fixed width for the card, adjust as needed */
   color: #fff;
   padding: 1rem 0.9rem;
   perspective: 1000px;
   border-radius: 10px;
+}
+.card.height-auto {
+  height: auto; /* Let the height adjust to the content */
 }
 
 

@@ -3,7 +3,7 @@ import classes from "./Faq.module.css"
 
 const questions = [
     {
-        question: "How can i participate in Tharang 23 V2?",
+        question: "How can I participate in Tharang 23 V2?",
         answer: "Participation in Tharang 2023 V2 is open to everyone and there are no registration fees to be applied."
     },
     {

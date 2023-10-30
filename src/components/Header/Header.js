@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown, faXmark } from "@fortawesome/free-solid-svg-icons";
 import { HashLink as Link } from "react-router-hash-link";
 import Dropdown from "./Dropdown";
-import Logo from "./header_logo.jpg";
+import Logo from "./header_logo2.png";
 
 const Scroll = require("react-scroll");
 const Drop = Scroll.Link;

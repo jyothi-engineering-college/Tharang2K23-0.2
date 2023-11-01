@@ -1,6 +1,6 @@
 import classes from "./MR.module.css";
 import Lists from "../MrDetail/MrLists";
-import EventCard from "../../components/EventCard/EventCard";
+import EventCard from "../../components/EventCardR/EventCard";
 import { useEffect } from "react";
 import StayTuned from "../../components/StayTuned/StayTuned";
 
@@ -9,23 +9,24 @@ const MR = () => {
     window.scrollTo(0, 0)
   }, [])
   return (
-    <div className={classes.MR}>
-      {Lists.length > 0 ? (
-      Lists.map((list) => {
+    <div className={classes.Eee}>
+      {Lists.map((list) => {
         return (
-          <EventCard
-            key={list.id}
-            imgSrc={list.imgSrc}
-            heading={list.heading}
-            redirectLink={list.redirectLink}
+          <div key={list.id}>
+            <EventCard
+              eventtitle={list.heading}
+              eventDescription={list.desc}
+              imgSrc={list.imgSrc}
+              heading={list.name}  
+              regFee={list.regFee} 
+              contact={list.contact} 
+              redirectLink={list.redirectLink}
             />
-            );
-          })
-        ) : (
-          <StayTuned />
-        )}
-      </div>
-    );
-  };
-
+            <br />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 export default MR;

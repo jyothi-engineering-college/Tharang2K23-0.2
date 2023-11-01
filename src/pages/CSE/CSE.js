@@ -1,31 +1,32 @@
 import classes from "./CSE.module.css";
-import CseLists from "../CseDetail/CseLists";
+import Lists from "../CseDetail/CseLists";
 import EventCard from "../../components/EventCard/EventCard";
 import { useEffect } from "react";
+import StayTuned from "../../components/StayTuned/StayTuned";
 
 const CSE = () => {
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
-
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className={classes.CSE}>
-      {CseLists.map((list) => {
+      {Lists.length > 0 ? (
+      Lists.map((list) => {
         return (
           <EventCard
             key={list.id}
-            eventtitle={list.heading}
-            eventDescription={list.desc}
             imgSrc={list.imgSrc}
-            heading={list.name}  
-            regFee={list.regFee} 
-            contact={list.contact} 
+            heading={list.heading}
             redirectLink={list.redirectLink}
-          />
-        );
-      })}
-    </div>
-  );
-};
+            />
+            );
+          })
+        ) : (
+          <StayTuned />
+        )}
+      </div>
+    );
+  };
+
 
 export default CSE;

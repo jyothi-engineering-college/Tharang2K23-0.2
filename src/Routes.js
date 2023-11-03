@@ -24,7 +24,7 @@ import MrDetail from "./pages/MrDetail/MrDetail";
 import RA from "./pages/RA/RA";
 import RaDetail from "./pages/RaDetail/RaDetail";
 import Tech from "./pages/Technical/Technical";
-import TechDetail from "./pages/TechnicalDetail/TechnicalDetail";
+import TechDetail from "./pages/TechnicalDetail/TechDetail";
 import Cultural from "./pages/Cultural/Cultural";
 import CulturalDetail from "./pages/CulturalDetail/CulturalDetail";
 

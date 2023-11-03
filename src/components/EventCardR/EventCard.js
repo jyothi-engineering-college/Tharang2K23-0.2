@@ -48,7 +48,7 @@ const EventCard = (props) => {
                 <p>{props.eventDescription}</p>
               </div>
               <p className={classes.fees}>
-                Registration fees:
+                Registration fees is &nbsp;
                 <span className={classes.amount}>{props.regFee}</span>
               </p>
               <p>Contact</p>

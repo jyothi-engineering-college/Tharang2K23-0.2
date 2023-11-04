@@ -1,31 +1,33 @@
-import classes from "./BSH.module.css";
-import BshLists from "../BshDetail/BshLists";
-import EventCard from "../../components/EventCard/EventCard";
+import classes from "../EEE/EEE.module.css";
+import EeeLists from "../BshDetail/BshLists";
+import EventCard from "../../components/EventCardR/EventCard.js";
 import { useEffect } from "react";
-import StayTuned from "../../components/StayTuned/StayTuned";
 
 const BSH = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
-    <div className={classes.BSH}>
-      {BshLists.length > 0 ? (
-      BshLists.map((list) => {
+    <div className={classes.Eee}>
+      {EeeLists.map((list) => {
         return (
-          <EventCard
-            key={list.id}
-            imgSrc={list.imgSrc}
-            heading={list.heading}
-            redirectLink={list.redirectLink}
+          <div key={list.id}>
+            <EventCard
+              eventtitle={list.heading}
+              eventDescription={list.desc}
+              imgSrc={list.imgSrc}
+              heading={list.name}  
+              regFee={list.regFee} 
+              contact={list.contact} 
+              redirectLink={list.redirectLink}
             />
-            );
-          })
-        ) : (
-          <StayTuned />
-        )}
-      </div>
-    );
-  };
+            <br />
+          </div>
+        );
+      })}
+    </div>
+  );
+};
 
 export default BSH;

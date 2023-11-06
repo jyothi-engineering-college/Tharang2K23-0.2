@@ -59,7 +59,7 @@
 .answer {
     font-size: 1.4rem;
     max-height: 100px;
-    transition: max-height .5s;
+    transition: max-height ;
     color: #F2F2F2;
     padding: 1.8rem 0 0 0;
     letter-spacing: .3rem;
@@ -68,7 +68,7 @@
 
 .noAnswer {
     max-height: 0;
-    transition: max-height .5s;
+    transition: max-height ;
     overflow: hidden;
     opacity: 80%;
 }

@@ -43,7 +43,6 @@ const Faq = () => {
            return <div className={classes.single} onClick={() => toggle(i)}>
                 <div className={classes.question}>{ques.question}</div>
                 <div className={`${clicked === i ? classes.answer : classes.noAnswer}`}>{ques.answer}</div>
-                <span className={classes.btn}>+</span>
             </div>
         })}
 

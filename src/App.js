@@ -5,11 +5,11 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Events from "./components/Events/Events";
 // import Gallery from "./components/Gallery/Gallery";
-import GoldSponsor from "./components/Ambassadar/GoldSponsor";
+// import GoldSponsor from "./components/Ambassadar/GoldSponsor";
 // import Alumni from "./components/Alumni/Alumni";
 import ContactUs from "./components/ContactUs/ContactUs";
-import SilverSponsor from "./components/Ambassadar/SilverSponsor";
-import PlatinumSponsor from "./components/Ambassadar/PlatinumSponsor";
+// import SilverSponsor from "./components/Ambassadar/SilverSponsor";
+// import PlatinumSponsor from "./components/Ambassadar/PlatinumSponsor";
 
 
 function App() {

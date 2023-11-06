@@ -50,7 +50,29 @@ const AdLists = [
     regFee: "50",
     contact: "Josten S Cheeran",
     redirectLink:`/events/AdDetail/PhotoBooth`
-  }
+  },
+  {
+    id: 7,
+    name: "FacePainting",
+  imgSrc: "/assets/AD/Fp.jpg",
+  heading: "Face Painting",
+  rule1: "Get your face painted by professional face painters.",
+  rule2: "Available on November 10 and 11.",
+  regFee: "60",
+  contact: "Niharika JN",
+  redirectLink:  `/events/AdDetail/FacePainting`
+  },
+  {
+    id: 8,
+    name: "Mic",
+    imgSrc: "/assets/AD/Openmic.jpg",
+    heading: "Open Mic",
+  rule1: "Perform your desired events.",
+  rule2: "Show your talent at Open Mic on November 10 and 11.",
+  regFee: "Free",
+  contact: "Josten S Cheeran - 7907935842",
+    redirectLink: `/events/AdDetail/Mic`
+  },
 ];
 
 export default AdLists;

@@ -37,7 +37,7 @@ const BshDetail = () => {
                 Registration fees :
                 <span className={classes.amount}> {culturalDetail.regFee}</span>
               </p>
-              <p className={classes.cont}>Contact - {culturalDetail.contact}</p>
+              <p className={classes.cont}>For more details Contact -{culturalDetail.contact}</p>
             </div>
           </div>
         </div>

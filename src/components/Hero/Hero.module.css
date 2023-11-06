@@ -23,19 +23,6 @@
     /* add border to text */
   }
   
-  .videoBackground {
-    position: fixed; /* Changed from absolute to fixed */
-    top: 0;
-    left: 0;
-    width: 100vw; /* Viewport width */
-    height: 100vh; /* Viewport height */
-    object-fit: cover;
-    z-index: -1;
-    filter: blur(10px); /* Add this line to blur the video */
-  }
-  
-  
-  
 .herobox {
     display: flex;
     flex-direction: column;
@@ -57,11 +44,11 @@
     font-weight: bolder;
     display: inline-block;
     margin-top: 90px;
-    background-color: #f4d8f5;
+    background-color: #ffffff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     letter-spacing: 6px;
-    text-shadow: 0 0 15px rgba(255, 255, 255, 0.848);
+    /* text-shadow: 0 0 15px rgba(255, 255, 255, 0.848); */
 }
 .heading2023{
     font-family:myFirstFont3;
@@ -91,7 +78,7 @@
     font-weight: 100;
     margin-top: 3rem;
     margin-bottom: 1rem;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.848);
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.848); */
 }
 
 .date {
@@ -102,13 +89,13 @@
     font-weight: 300;
     margin-top: 2rem;
     margin-bottom: 3rem;
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.848);
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.848); */
     
 }
 
 .btn {
     display: block;
-        background-image: linear-gradient(to top right,#09B326, #32B4ED);
+        background-image: linear-gradient(to top right,#ca87ca, #2e0434);
         
         padding: 1.1rem 1rem;
         border: none;
@@ -184,6 +171,7 @@
     
     .hero{
        background-position: center center;
+       
     }
 
     .logo {
@@ -216,7 +204,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 1rem; /* space between columns */
+        gap: 2rem; /* space between columns */
       }
 }
 @media screen and (max-width: 768px) {

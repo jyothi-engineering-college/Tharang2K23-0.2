@@ -40,32 +40,17 @@ const Hero = () => {
   clearInterval(interval);
    };
    });
-   const [isDesktop, setIsDesktop] = useState(window.innerWidth >= 768); // or any other width threshold you prefer for mobile vs desktop
 
-   const updateMedia = () => {
-     setIsDesktop(window.innerWidth >= 768);
-   };
- 
-   useEffect(() => {
-     window.addEventListener('resize', updateMedia);
-     return () => window.removeEventListener('resize', updateMedia);
-   }, []);
- 
-   return (
-     <section id="home" className={classes.hero}>
-      <video autoPlay loop muted className={classes.videoBackground}>
-        <source
-          src={isDesktop ? "/assets/Hero/t.mp4" : "/assets/Hero/t2.mp4"}
-          type="video/mp4"
-        />
-      </video>
+  return (
+    <section id="home" className={classes.hero}>
+      
       <div className={classes.herobox}>
         <div className={classes.headerbox}>
           <center>
           <h1 className={classes.heading}>
         <span className={classes.tharang}>THARANG</span>
         <span className={classes.heading2023}>'23</span>{" "}
-        <span className={classes.heading2023}>2.0</span>{" "}
+        <span className={classes.heading20}>2.0</span>{" "}
       </h1>
           </center>
           <h4 className={classes.caption}>

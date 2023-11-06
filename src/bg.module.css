@@ -1,0 +1,11 @@
+.videoBackground {
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    object-fit: cover;
+    z-index: -1;
+    filter: blur(10px); /* Add this line to blur the video */
+  }
+  

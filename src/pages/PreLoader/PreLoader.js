@@ -14,7 +14,7 @@ function PreLoader() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoadingCompleted(true);
-    }, 10000);  // Adjust this time based on your actual loading time.
+    }, 60000);  // Adjust this time based on your actual loading time.
 
     return () => clearTimeout(timer);  // Clean up timer on unmount
   }, []);

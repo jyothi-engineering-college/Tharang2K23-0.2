@@ -117,7 +117,7 @@ const Header = () => {
                     window.open("https://tharang23.netlify.app/", "_blank");
                   }}
                 >
-                  Campus Ambassador
+                  Ambassador
                 </Link>
               </Drop>
             </li>

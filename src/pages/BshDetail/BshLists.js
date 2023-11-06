@@ -9,6 +9,17 @@ const AdLists = [
       contact: "Iwin Joy , Phone number  6238478300",
       redirectLink:`/events/BshDetail/G-VERSE`,
     }
+    ,
+    { 
+      id: 2,
+      name: "PLAYPALOOZA",
+      imgSrc: "/assets/BSH/pp.png",
+      heading: "PLAYPALOOZA",
+      desc:"Arcade games , smoky cheese ball setup",
+      regFee: " is 60 for Smoky cheese and 20 for Arcade",
+      contact: "Shelin , Phone number  97782 29409",
+      redirectLink:`/events/BshDetail/PLAYPALOOZA`,
+    }
   ];
   
   export default AdLists;

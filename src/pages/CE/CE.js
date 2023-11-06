@@ -1,32 +1,31 @@
+import React, { useEffect } from "react";
 import classes from "./CE.module.css";
-import Lists from "../CeDetail/CeLists";
-import EventCard from "../../components/EventCard/EventCard";
-import { useEffect } from "react";
-import StayTuned from "../../components/StayTuned/StayTuned";
+import CELists from "../CeDetail/CeLists";
+import EventCard from "../../components/EventCardR/EventCard.js";
 
 const CE = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className={classes.CE}>
-      {Lists.length > 0 ? (
-      Lists.map((list) => {
-        return (
+      {CELists.map((list) => (
+        <div key={list.id}>
           <EventCard
-            key={list.id}
+            eventtitle={list.heCEing}
+            eventDescription={list.desc}
             imgSrc={list.imgSrc}
-            heading={list.heading}
+            heCEing={list.name}
+            regFee={list.regFee}
+            contact={list.contact}
             redirectLink={list.redirectLink}
-            />
-            );
-          })
-        ) : (
-          <StayTuned />
-        )}
-      </div>
-    );
-  };
-
+          />
+          <br />
+        </div>
+      ))}
+    </div>
+  );
+};
 
 export default CE;

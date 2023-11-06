@@ -16,7 +16,7 @@ const AdLists = [
     heading: "Laser Tag",
     desc: "Laser tag is a combat simulation using infrared guns.Players navigate arenas,tagging rivals with lasers. Without projectiles,it's safe for all. It promotes teamwork,strategy,and blends physical activity with fun." ,
     regFee: "50 per head",
-    contact: "Sanjon Rion - 9995038572",
+    contact: "Mohammed Irfan - 9061335998",
     redirectLink: `/events/CseDetail/LaserTag`,
 },
 

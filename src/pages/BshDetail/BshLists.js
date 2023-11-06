@@ -19,6 +19,17 @@ const AdLists = [
       regFee: " is 60 for Smoky cheese and 20 for Arcade",
       contact: "Shelin , Phone number  97782 29409",
       redirectLink:`/events/BshDetail/PLAYPALOOZA`,
+    },
+    {
+      id: 3,
+      name: "SquidGameSeries",
+      imgSrc: "/assets/BSH/b.jpg",
+      heading: "Squid Game Series",
+      desc:"It is a tournament consisting of 4 levels. Tournament is held in the squid game theme (popular tv show). Each level consists of simple party games",
+      regFee:"20 per person" ,
+      contact: "Phone number  7511101352",
+      redirectLink:`/events/BshDetail/SquidGameSeries`,
+
     }
   ];
   

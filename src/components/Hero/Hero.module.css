@@ -7,7 +7,7 @@
 }
 @font-face {
     font-family: myFirstFont3;
-    src: url(Calamity-Regular.otf);
+    src: url(Blanka-Regular.otf);
 }
 
 @font-face {
@@ -20,6 +20,7 @@
     height: 100vh; /* Full height */
     overflow: hidden; /* Hide the overflow */
     /* Other styles... */
+    /* add border to text */
   }
   
   .videoBackground {
@@ -30,7 +31,9 @@
     height: 100vh; /* Viewport height */
     object-fit: cover;
     z-index: -1;
+    filter: blur(10px); /* Add this line to blur the video */
   }
+  
   
   
 .herobox {
@@ -57,7 +60,7 @@
     background-color: #f4d8f5;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    letter-spacing: 10px;
+    letter-spacing: 6px;
     text-shadow: 0 0 15px rgba(255, 255, 255, 0.848);
 }
 .heading2023{
@@ -192,7 +195,7 @@
     }
 
     .heading {
-        font-size: 8rem;
+        font-size: 6rem;
     }
 
     .btn {

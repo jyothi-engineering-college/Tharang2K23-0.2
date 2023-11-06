@@ -33,7 +33,7 @@ function App() {
       <Events />
       {/* <Gallery /> */}
       {/* <Alumni /> */}
-      <SilverSponsor />
+      {/* <SilverSponsor /> */}
 
       <ContactUs />
     </Fragment>

@@ -43,6 +43,9 @@ const Hero = () => {
 
   return (
     <section id="home" className={classes.hero}>
+      <video autoPlay loop muted className={classes.videoBackground}>
+        <source src="/assets/Hero/t.mp4" type="video/mp4" />
+      </video>
       <div className={classes.herobox}>
         <div className={classes.headerbox}>
           <center>

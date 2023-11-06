@@ -14,17 +14,25 @@
     font-family: bit;
     src: url(joystix-monospace.otf);
 }
-
 .hero {
+    position: relative;
     width: 100%;
-    background: url('/public/assets/5.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    position:relative;
-     top:0px; right:0px; bottom:0px; left:0px;
-}
-
+    height: 100vh; /* Full height */
+    overflow: hidden; /* Hide the overflow */
+    /* Other styles... */
+  }
+  
+  .videoBackground {
+    position: fixed; /* Changed from absolute to fixed */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Viewport width */
+    height: 100vh; /* Viewport height */
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  
 .herobox {
     display: flex;
     flex-direction: column;

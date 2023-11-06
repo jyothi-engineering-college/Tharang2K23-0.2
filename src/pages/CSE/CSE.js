@@ -1,6 +1,6 @@
 import classes from "./CSE.module.css";
 import CSELists from "../CseDetail/CseLists";
-import EventCard from "../../components/EventCard/EventCard.js";
+import EventCard from "../../components/EventCardR/EventCard.js";
 import { useEffect } from "react";
 
 const CSE = () => {

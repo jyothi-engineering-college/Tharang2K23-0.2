@@ -1,51 +1,28 @@
 const AdLists = [
   {
-    "id": 1,
-    "name": "AI/Metaverse Workshop",
-    "para": "Date: October 28, 2023",
-    "imgSrc": "/assets/AD/a11.png",
-    "heading": "AI/Metaverse Workshop",
-    "rule1": "Venue: Decennial Hall, Jyothi Engineering College, Thrissur",
-    "rule2": "Topic: AI/Metaverse",
-    "rule3": "Sponsored by: Unique World Robotics",
-    "rule4": "In collaboration with: AIDA, CSI, and IEDC",
-    "rule5": "Type: Pre-Tharang event",
-    "regFee": "150/- per person",
-    "contact": "Chandini T S",
-    "redirectLink": "https://forms.gle/CZmcLxGjCCzmtrZx6"
+    id: 1,
+    name: "REVXPO",
+    imgSrc: "/assets/ME/show.jpg",
+    heading: "REVXPO",
+    rule1: "Flagship Event of Mechanical Department",
+    rule2: "Exclusive vehicles from all over Kerala",
+    rule3: "Treat your ears to the music of engines",
+    regFee: "50rs per Ticket",
+    contact: "Dobin: 79073 90580",
+    redirectLink: `https://bit.ly/3FKKaUc`
   },
   {
-    "id": 2,
-    "name": "Intruder",
-    "para": "\"Intruder's Quest\" is an exciting part of the big Razzle Dazzle event. In this challenge, you go through a tricky maze filled with lasers without setting off any alarms. Your main goal is to find the hidden treasure inside the maze and win the game.",
-    "imgSrc": "/assets/AD/a12.jpg",
-    "heading": "Intruder's Quest",
-    "rule1": "Date: Nov 10 and 11",
-    "regFee": "70/- per person",
-    "contact": "Josten S Cheeran",
-    "redirectLink": `/events/AdDetail/Intruder`
+    id: 2,
+    name: "MAAYA",
+    imgSrc: "/assets/ME/maya.png",
+    heading: "MAAYA",
+    rule1: "A vibe that can't be described",
+    rule2: "A play of light, art, illusion and sound",
+    rule3: "Elevate the soul of the viewer",
+    regFee: "Free",
+    contact: "SHINE TS: 8137942347",
+    redirectLink: `/events/MeDetail/MAAYA`
   },
-  {
-    "id": 3,
-    "name": "Blind",
-    "para": "\"Blind's Man Bluff\" is an exciting and immersive activity within the Razzle Dazzle event that challenges participants to explore their senses and engage in a unique form of hide-and-seek.",
-    "imgSrc": "/assets/AD/a13.jpg",
-    "heading": "Blind's Man Bluff",
-    "rule1": "Date: Nov 10 and 11",
-    "regFee": "20/- per head",
-    "contact": "Surya Narayan",
-    "redirectLink": `/events/AdDetail/Blind`
-  },
-  {
-    "id": 4,
-    "name": "Photo",
-    "para": "Participants can enter the photobooth and have their vintage-style photographs taken.",
-    "imgSrc": "/assets/AD/a14.jpg",
-    "heading": "Photo Booth",
-    "rule1": "Date: Nov 10 & 11",
-    "regFee": "50/- per person",
-    "contact": "Josten S Cheeran",
-    "redirectLink": `/events/AdDetail/Photo`
-  }
+  // ... (other entries)
 ]
 export default AdLists;

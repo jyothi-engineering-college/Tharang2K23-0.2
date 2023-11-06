@@ -1,4 +1,4 @@
-import classes from "../EEE/EEE.module.css";
+import classes from "../AD/AD.module.css";
 import MeLists from "../MeDetail/MeLists";
 import EventCard from "../../components/EventCardR/EventCard.js";
 import { useEffect } from "react";

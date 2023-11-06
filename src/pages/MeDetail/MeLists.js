@@ -1,16 +1,6 @@
 const AdLists = [
   {
-      id: 1,
-      name: "MAAYA",
-      imgSrc: "/assets/ME/maya.png",
-      heading: "MAAYA",
-      regFee: " Free",
-      desc: "Space themed entertainment event with several space models and a cosmic ambience. It's paired with music, sound effects and an entire space-like feel to make the audience feel one with the universe we live in. Laser lights are also used to engage the audience as they explore the event.",
-      contact: "SHINE TS : 8137942347",
-      redirectLink:`/events/MeDetail/MAAYA`
-  },
-  {
-    id: 2,
+    id: 1,
     name: "REVXPO",
     imgSrc: "/assets/ME/show.jpg",
     heading: "REVXPO",
@@ -18,7 +8,18 @@ const AdLists = [
     desc: "The Flagship Event of Mechanical Department, The REVXPO brings  unique and exclusive vehicles from all over kerala for everyone to feast their eyes upon and treat their ears to the wonderful music of their engines .",
     contact: "Dobin : 79073 90580",
     redirectLink:`https://bit.ly/3FKKaUc`
-  }
+  },
+  {
+      id: 2,
+      name: "MAAYA",
+      imgSrc: "/assets/ME/maya.png",
+      heading: "MAAYA",
+      regFee: " Free",
+      desc: "A vibe that can't be described, an experience that can only be felt but never told, Maaya showcases a wonderful play of light, art, illusion and sounds to elevate the soul of the viewer. Visit Maaya for a mind-blowing experience",
+      contact: "SHINE TS : 8137942347",
+      redirectLink:`/events/MeDetail/MAAYA`
+  },
+  
 
 ]
 export default AdLists;

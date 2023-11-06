@@ -17,12 +17,12 @@ const AdLists = [
     redirectLink: "https://forms.gle/rnYm1hHU7NLsGWiJA",
 },{
   id: 3,
-  name: "Dancing Robo Expo",
+  name: "DancingRoboExpo",
   imgSrc: "/assets/Tech/robo.jpg",
   heading: "Dancing Robo Expo",
   regFee: " is open to all",
   contact: "Agna :+91 94969 82199",
-  redirectLink : `/events/TechDetail/Dancing Robo Expo`,
+  redirectLink : `/events/TechDetail/DancingRoboExpo`,
 }
 
 ]

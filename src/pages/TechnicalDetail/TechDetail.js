@@ -1,20 +1,18 @@
 import { useParams } from "react-router-dom";
-import classes from "./TechnicalDetail.module.css";
+import classes from "../EeeDetail/EeeDetail.module.css";
 import Background from "../../UI/Background";
-import TechnicalLists from "./TechLists";
+import TechLists from "./TechLists";
 import { useEffect } from "react";
 
-const TechnicalDetail = () => {
-
+const TechDetail = () => {
   useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
-  
-  const params = useParams();
-  console.log(params.id);
+    window.scrollTo(0, 0);
+  }, []);
 
-  const technical = TechnicalLists.filter((event) => params.id === event.name);
-  console.log(technical);
+  const params = useParams();
+  const culturalDetail = TechLists.filter(
+    (event) => params.id === event.name
+  )[0];
 
   return (
     <section className={classes.ambaSection}>
@@ -23,28 +21,23 @@ const TechnicalDetail = () => {
           <div className={classes.imgBox}>
             <img
               className={classes.img}
-              src={technical[0].imgSrc}
+              src={culturalDetail.imgSrc}
               alt="Desafio"
             />
           </div>
           <div className={classes.scrollBox}>
             <div className={classes.headingBox}>
-              <h3 className={classes.heading}>{technical[0].heading}</h3>
-              <p className={classes.para}>{technical[0].headingPara}</p>
-              <h3 className={classes.heading}>Certification</h3>
-              <p className={classes.para}>{technical[0].certiPara}</p>
-              <h3 className={classes.heading}>Learning Outcomes</h3>
-
-              {technical[0].rules.map((map) => {
-                return <p className={classes.para}>{map}</p>;
-              })}
-              <a
-                href={technical[0].paymentLink}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <button className={classes.btn}>Register Now !</button>
-              </a>
+              <h3 className={classes.heading}>{culturalDetail.heading}</h3>
+              <p className={classes.para}>{culturalDetail.desc}</p>
+              
+              {[culturalDetail.rule1, culturalDetail.rule2, culturalDetail.rule3].map((rule, idx) => (
+                rule ? <p key={idx} className={classes.para}>{rule}</p> : null
+              ))}
+              <p className={classes.fees}>
+                Registration fees :
+                <span className={classes.amount}> {culturalDetail.regFee}</span>
+              </p>
+              <p className={classes.cont}>Contact - {culturalDetail.contact}</p>
             </div>
           </div>
         </div>
@@ -53,4 +46,4 @@ const TechnicalDetail = () => {
   );
 };
 
-export default TechnicalDetail;
+export default TechDetail;

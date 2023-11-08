@@ -56,7 +56,7 @@ const AdLists = [
 },{
   id: 6,
   name: "Khwaab",
-  imgSrc: "/assets/CSE/SING.png",
+  imgSrc: "/assets/CSE/khwaab.jpg",
   heading: "Khwaab",
   desc: "Musical performance by artist mubaasco",
   regFee: "Free for all",

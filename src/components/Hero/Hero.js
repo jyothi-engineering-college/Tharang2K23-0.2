@@ -10,7 +10,7 @@ const Hero = () => {
    let interval = useRef();
 
    const startTimer = () => {
-     const countdownDate = new Date("Nov 10 2023 08:00:00").getTime();
+     const countdownDate = new Date("Nov 9 2023 08:00:00").getTime();
 
      interval = setInterval(() => {
        const now = new Date().getTime();
@@ -25,6 +25,10 @@ const Hero = () => {
 
        if (distance < 0) {
          clearInterval(interval);
+         setDays("00");
+          setHours("00");
+          setMinutes("00");
+          setSeconds("00");
      } else {
      setDays(days);
      setHours(hours);
